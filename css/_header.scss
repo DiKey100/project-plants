@@ -2,16 +2,62 @@
     display: flex;
     justify-content: $justify;
 }
+@mixin image() {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@mixin font($style, $weight, $size) {
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+}
+@mixin lineHeight($heightPX) {
+    line-height: $heightPX;
+}
+@mixin widthHeight($width, $height) {
+    width: $width;
+    height: $height;
+}
 
 .header {
     width: 100%;
 }
-
 .header-top {
     height: 55px;
     @include flex(space-between);
     align-items: center;
+    background-color: $edge;
+    padding: 0px 20px;
 }
 .header-logo-links {
     @include flex(space-between);
+    width: 100px;
+    height: 20px;
+}
+.header-mail, .header-call, .header-location {
+    @include image();
+    width: 20px;
+}
+.header-mail {
+    background-image: url(../images/header-mail.png);
+}
+.header-call {
+    background-image: url(../images/header-call.png);
+}
+.header-location {
+    background-image: url(../images/header-location.png);
+}
+.choice-language {
+    @include flex(flex-start);
+    align-items: center;
+    color: $white;
+    @include font(normal, 400, 12px);
+    &:after {
+        content: "";
+        display: block;
+        padding-left: 5px;
+        @include widthHeight(7px, 4px);
+        background-image: url(../images/header-arrow.png);
+        @include image();
+    }
 }
