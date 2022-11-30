@@ -63,4 +63,55 @@ body {
   background-image: url(../images/header-arrow.png);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.header-middle {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  background-color: white;
+}
+
+.header-logo {
+  width: 90px;
+  height: 40px;
+}
+
+.button-links {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  height: 34px;
+}
+
+.call-us {
+  background-image: url(../images/call-us-green.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 34px;
+  border: 1px #00730C solid;
+  border-radius: 10px;
+  background-color: white;
+}
+.call-us:hover {
+  background-image: url(../images/call-us-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00730C;
+  cursor: pointer;
+}
+
+.menu-list {
+  background-image: url(../images/header-menu-list.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.menu-list:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
