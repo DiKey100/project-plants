@@ -1,0 +1,17 @@
+@mixin flex($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-top {
+    height: 55px;
+    @include flex(space-between);
+    align-items: center;
+}
+.header-logo-links {
+    @include flex(space-between);
+}
