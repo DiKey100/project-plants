@@ -215,6 +215,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 .see-work::after {
   content: "";
@@ -229,7 +230,7 @@ body {
 
 .flower-head-left {
   position: absolute;
-  top: 586px;
+  top: 675px;
   left: -10px;
   background-image: url(../images/flower-head-left.png);
   background-position: center;
@@ -253,7 +254,7 @@ body {
 }
 
 .second-button {
-  width: 130px;
+  width: 128px;
   height: 32px;
   background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
   gap: 8px;
@@ -285,7 +286,7 @@ body {
 }
 
 .button-second-text {
-  width: 71px;
+  width: 74px;
   height: 14px;
 }
 

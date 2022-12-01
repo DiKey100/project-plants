@@ -145,6 +145,7 @@
     text-align: center;
     @include flex(center);
     align-items: center;
+    margin-bottom: 40px;
     &::after {
         @include beforeAfter();
         background-image: url(../images/header-bottom-arrow.png);
@@ -155,7 +156,7 @@
 }
 .flower-head-left {
     position: absolute;
-    top: 586px;
+    top: 675px;
     left: -10px;
     background-image: url(../images/flower-head-left.png);
     @include image();
@@ -171,7 +172,7 @@
     background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
 }
 .second-button {
-    @include widthHeight(130px, 32px);
+    @include widthHeight(128px, 32px);
     background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
     gap: 8px;
 }
@@ -192,7 +193,7 @@
     @include widthHeight(76px, 14px);
 }
 .button-second-text {
-    @include widthHeight(71px, 14px);
+    @include widthHeight(74px, 14px);
 }
 .button-first-text, .button-second-text {
     @include font(normal, 400, 10px, 14px);
