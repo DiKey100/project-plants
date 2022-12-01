@@ -1,7 +1,6 @@
 // services section
 
-.services {
-    background: $white;
+.services, .about-us {
     @include flex(center);
     flex-direction: column;
     align-items: center;
@@ -56,4 +55,34 @@
     @include widthHeight(235px, 44px);
     @include font(normal, 400, 14px, 22px);
     color: $dark-grey;
+}
+
+// about us section
+
+.au-content {
+    @include flex(center);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    @include widthHeight(345px, 421px);
+}
+.au-content-head {
+    @include widthHeight(345px, 76px);
+    @include font(normal, 700, 28px, 38px);
+    color: $black;
+    margin-bottom: 15px;
+    span {
+        color: $prime;
+    }
+}
+.au-content-text {
+    @include widthHeight(345px, 330px);
+    @include font(normal, 400, 14px, 22px);
+    color: $dark-grey;
+}
+.au-cards {
+    padding-top: 40px;
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: flex-start;
 }

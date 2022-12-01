@@ -5,6 +5,7 @@
 body {
   margin: 0px;
   font-family: "Nunito", sans-serif;
+  background: white;
 }
 
 .header {
@@ -298,8 +299,7 @@ body {
   color: #212529;
 }
 
-.services {
-  background: white;
+.services, .about-us {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -383,4 +383,46 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #676767;
+}
+
+.au-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  width: 345px;
+  height: 421px;
+}
+
+.au-content-head {
+  width: 345px;
+  height: 76px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #212529;
+  margin-bottom: 15px;
+}
+.au-content-head span {
+  color: #00730C;
+}
+
+.au-content-text {
+  width: 345px;
+  height: 330px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+
+.au-cards {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
