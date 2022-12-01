@@ -126,11 +126,11 @@ body {
   background: #C4C4C4;
   width: 100%;
   height: 240px;
-  line-height: 240px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
+  line-height: 240px;
   color: #212529;
   margin-top: 50.83px;
 }
@@ -141,4 +141,158 @@ body {
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
   padding-top: 47.63px;
   padding-left: 14.5px;
+}
+
+.head-bottom-sub-head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  justify-content: flex-start;
+  color: #212529;
+  margin-bottom: 10px;
+}
+.head-bottom-sub-head::before {
+  content: "";
+  display: block;
+  background-image: url(../images/header-bottom-plant.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 23.8px;
+  height: 19.89px;
+  margin-right: 5px;
+}
+
+.head-bottom-head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #212529;
+  margin-bottom: 15px;
+  margin-right: 15.5px;
+}
+.head-bottom-head span {
+  color: #00730C;
+}
+
+.head-bottom-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 15.5px;
+  margin-bottom: 40px;
+}
+
+.get-a-quate {
+  padding: 12px 105px;
+  width: 303px;
+  height: 44px;
+  background: #00730C;
+  border-radius: 5px;
+  border: 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 19px;
+}
+
+.see-work {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #00730C;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.see-work::after {
+  content: "";
+  display: block;
+  background-image: url(../images/header-bottom-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 12.65px;
+  margin-left: 12px;
+}
+
+.flower-head-left {
+  position: absolute;
+  top: 586px;
+  left: -10px;
+  background-image: url(../images/flower-head-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 83px;
+  height: 133px;
+}
+
+.two-buttons-header {
+  display: flex;
+  justify-content: space-between;
+  width: 276px;
+  height: 32px;
+  margin-left: 22.66%;
+}
+
+.first-button {
+  width: 135px;
+  height: 32px;
+  background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+}
+
+.second-button {
+  width: 130px;
+  height: 32px;
+  background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+  gap: 8px;
+}
+
+.first-button, .second-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 8px 10px;
+  border-radius: 32px;
+  border: 0px;
+}
+
+.button-number {
+  width: 29px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #212529;
+}
+
+.button-first-text {
+  width: 76px;
+  height: 14px;
+}
+
+.button-second-text {
+  width: 71px;
+  height: 14px;
+}
+
+.button-first-text, .button-second-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #212529;
 }/*# sourceMappingURL=style.css.map */

@@ -6,12 +6,10 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-@mixin font($style, $weight, $size) {
+@mixin font($style, $weight, $size, $heightPX) {
     font-style: $style;
     font-weight: $weight;
     font-size: $size;
-}
-@mixin lineHeight($heightPX) {
     line-height: $heightPX;
 }
 @mixin widthHeight($width, $height) {

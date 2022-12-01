@@ -32,8 +32,7 @@
     @include flex(flex-start);
     align-items: center;
     color: $white;
-    @include font(normal, 400, 12px);
-    @include lineHeight(16px);
+    @include font(normal, 400, 12px, 16px);
     &:after {
         content: "";
         display: block;
@@ -88,9 +87,8 @@
 .header-banner {
     background: #C4C4C4;
     @include widthHeight(100%, 240px);
-    @include lineHeight(240px);
     text-align: center;
-    @include font(normal, 600, 28px);
+    @include font(normal, 600, 28px, 240px);
     color: $black;
     margin-top: 50.83px;
 }
@@ -101,13 +99,102 @@
     padding-left: 14.5px;
 }
 .head-bottom-sub-head {
-    @include font(normal, 700, 14px);
-    @include lineHeight(19px);
+    @include font(normal, 700, 14px, 19px);
+    @include flex(flex-start);
     color: $black;
-    &:after {
+    margin-bottom: 10px;
+    &::before {
+        @include beforeAfter();
         background-image: url(../images/header-bottom-plant.png);
         @include image();
-        @include beforeAfter();
+        @include widthHeight(23.8px, 19.89px);
         margin-right: 5px;
     }
+}
+.head-bottom-head {
+    @include font(normal, 700, 28px, 38px);
+    color: $black;
+    margin-bottom: 15px;
+    margin-right: 15.5px;
+    span {
+        color: $prime;
+    }
+}
+.head-bottom-text {
+    @include font(normal, 400, 14px, 22px);
+    margin-right: 15.5px;
+    margin-bottom: 40px;
+}
+.get-a-quate {
+    padding: 12px 105px;
+    @include widthHeight(303px, 44px);
+    background: $prime;
+    border-radius: 5px;
+    border: 0px;
+    @include font(normal, 700, 16px, 20px);
+    text-transform: capitalize;
+    color: $white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 19px;
+}
+.see-work {
+    @include font(normal, 600, 14px, 19px);
+    color: $prime;
+    text-align: center;
+    @include flex(center);
+    align-items: center;
+    &::after {
+        @include beforeAfter();
+        background-image: url(../images/header-bottom-arrow.png);
+        @include image();
+        @include widthHeight(16px, 12.65px);
+        margin-left: 12px;
+    }
+}
+.flower-head-left {
+    position: absolute;
+    top: 586px;
+    left: -10px;
+    background-image: url(../images/flower-head-left.png);
+    @include image();
+    @include widthHeight(83px, 133px);
+}
+.two-buttons-header {
+    @include flex(space-between);
+    @include widthHeight(276px, 32px);
+    margin-left: 22.66%;
+}
+.first-button {
+    @include widthHeight(135px, 32px);
+    background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+}
+.second-button {
+    @include widthHeight(130px, 32px);
+    background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+    gap: 8px;
+}
+.first-button, .second-button {
+    @include flex(space-between);
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 10px;
+    border-radius: 32px;
+    border: 0px;
+}
+.button-number {
+    @include widthHeight(29px, 16px);
+    @include font(normal, 700, 12px, 16px);
+    color: $black;
+}
+.button-first-text {
+    @include widthHeight(76px, 14px);
+}
+.button-second-text {
+    @include widthHeight(71px, 14px);
+}
+.button-first-text, .button-second-text {
+    @include font(normal, 400, 10px, 14px);
+    color: $black;
 }
