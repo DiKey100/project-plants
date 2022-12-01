@@ -338,7 +338,49 @@ body {
   width: 345px;
   height: 116px;
   padding: 20px;
+  margin-bottom: 20px;
   background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.serv-sentence:last-child {
+  margin-bottom: 0px;
+}
+
+.sentence-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.sentence-texts {
+  width: 235px;
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sentence-head {
+  width: auto;
+  height: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.sentence-text {
+  width: 235px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
 }/*# sourceMappingURL=style.css.map */
