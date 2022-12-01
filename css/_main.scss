@@ -85,4 +85,43 @@
     @include flex(space-between);
     flex-direction: column;
     align-items: flex-start;
+    @include widthHeight(344px, auto);
+}
+.au-cards-line {
+    @include flex(space-between);
+    flex-direction: row;
+    align-items: flex-start;
+    @include widthHeight(344px, 94px);
+    margin-bottom: 20px;
+}
+.au-card {
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    @include widthHeight(162px, 94px);
+    background: $white;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 5px;
+}
+.au-card-text {
+    @include widthHeight(132px, 19px);
+    @include font(normal, 700, 14px, 19px);
+    text-align: center;
+    text-transform: capitalize;
+    color: $black;
+}
+.discover-more {
+    @include widthHeight(167px, 40px);
+    @include font(normal, 700, 16px, 40px);
+    text-align: center;
+    border: 1px $prime solid;
+    border-radius: 5px;
+    background-color: $prime;
+    color: $white;
+    &:hover {
+        background-color: $white;
+        color: $prime;
+        cursor: pointer;
+    }
 }
