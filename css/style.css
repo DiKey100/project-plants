@@ -481,4 +481,55 @@ body {
   background-color: white;
   color: #00730C;
   cursor: pointer;
+}
+
+.why-choose-us {
+  margin-top: 50px;
+  background-color: #0C4B35;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 694px;
+  color: white;
+}
+
+.wcu-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  height: 163px;
+}
+
+.wcu-content-head {
+  width: 210px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: capitalize;
+}
+
+.wcu-content-text {
+  width: 345px;
+  height: 110px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.wcu-difference {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  height: 64px;
 }/*# sourceMappingURL=style.css.map */

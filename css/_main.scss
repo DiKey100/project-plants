@@ -125,3 +125,41 @@
         cursor: pointer;
     }
 }
+
+// why choose us section
+
+.why-choose-us {
+    margin-top: 50px;
+    background-color: $edge;
+    padding: 50px 15px;
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: center;
+    @include widthHeight(375px, 694px);
+    color: $white;
+}
+.wcu-content {
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: center;
+    @include widthHeight(345px, 163px);
+}
+.wcu-content-head {
+    @include widthHeight(210px, 38px);
+    @include font(normal, 700, 28px, 38px);
+    text-transform: capitalize;
+}
+.wcu-content-text {
+    @include widthHeight(345px, 110px);
+    @include font(normal, 400, 14px, 22px);
+    text-align: center;
+}
+.wcu-difference {
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: center;
+    @include widthHeight(345px, 64px);
+}
+.wcu-difference-line {
+    
+}
