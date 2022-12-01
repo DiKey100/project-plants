@@ -18,3 +18,7 @@
     width: $width;
     height: $height;
 }
+@mixin beforeAfter() {
+    content: "";
+    display: block;
+}
