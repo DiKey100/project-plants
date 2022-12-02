@@ -138,6 +138,9 @@
     @include widthHeight(375px, 694px);
     color: $white;
 }
+.wcu-photo {
+    @include widthHeight(345px, 217px);
+}
 .wcu-content {
     @include flex(space-between);
     flex-direction: column;
@@ -161,5 +164,24 @@
     @include widthHeight(345px, 64px);
 }
 .wcu-difference-line {
-    
+    @include flex(space-between);
+    align-items: center;
+    @include widthHeight(345px, 22px);
 }
+.wcu-diff-pick {
+    @include widthHeight(158px, 22px);
+    @include font(normal, 700, 16px, 22px);
+    text-transform: capitalize;
+    @include flex(space-between);
+    &::before {
+        @include beforeAfter();
+        @include widthHeight(20px, 20px);
+        background-color: $white;
+        border-radius: 50%;
+        @include image();
+        background-image: url(../images/main-wcu-tick.png);
+    }
+}
+
+// Working process section
+

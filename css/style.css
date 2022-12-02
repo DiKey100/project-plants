@@ -496,6 +496,11 @@ body {
   color: white;
 }
 
+.wcu-photo {
+  width: 345px;
+  height: 217px;
+}
+
 .wcu-content {
   display: flex;
   justify-content: space-between;
@@ -532,4 +537,35 @@ body {
   align-items: center;
   width: 345px;
   height: 64px;
+}
+
+.wcu-difference-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 345px;
+  height: 22px;
+}
+
+.wcu-diff-pick {
+  width: 158px;
+  height: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+}
+.wcu-diff-pick::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/main-wcu-tick.png);
 }/*# sourceMappingURL=style.css.map */
