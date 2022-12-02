@@ -299,7 +299,7 @@ body {
   color: #212529;
 }
 
-.services, .about-us {
+.services, .about-us, .your-team {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -744,4 +744,13 @@ body {
 }
 .cta-call-us:hover::before {
   background-image: url(../images/call-us-white.png);
+}
+
+.your-team {
+  width: 375px;
+  height: 654px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

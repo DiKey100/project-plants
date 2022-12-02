@@ -1,6 +1,6 @@
 // services section
 
-.services, .about-us {
+.services, .about-us, .your-team {
     @include flex(center);
     flex-direction: column;
     align-items: center;
@@ -301,4 +301,13 @@
             background-image: url(../images/call-us-white.png);
         }
     }
+}
+
+// your team section
+
+.your-team {
+    @include widthHeight(375px, 654px);
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: center;
 }
