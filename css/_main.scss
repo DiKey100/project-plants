@@ -248,3 +248,57 @@
     @include font(normal, 400, 14px, 22px);
     color: $dark-grey;
 }
+
+// cta section
+.main-cta {
+    @include widthHeight(375px, 224px);
+    padding: 0px 15px;
+    margin-top: 55px;
+}
+.cta-photo {
+    background-image: url(../images/main-cta-photo.png);
+    @include image();
+    @include widthHeight(345px, 224px);
+}
+.cta-basic {
+    position: relative;
+    top: -174px;
+    left: 41px;
+
+    @include widthHeight(272px, 124px);
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: center;
+}
+.cta-text {
+    @include widthHeight(272px, 54px);
+    @include font(normal, 700, 20px, 27px);
+    text-align: center;
+    color: $white;
+}
+.cta-call-us {
+    @include widthHeight(137px, 40px);
+    color: $prime;
+    text-transform: capitalize;
+    background: $white;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 5px;
+    border: 0px;
+    @include font(normal, 700, 14px, 40px);
+    @include flex(center);
+    align-items: center;
+    &::before {
+        @include beforeAfter();
+        @include widthHeight(20px, 20px);
+        @include image();
+        background-image: url(../images/call-us-green.png);
+        margin-right: 10px;
+    }
+    &:hover {
+        background: $prime;
+        color: $white;
+        &::before {
+            background-image: url(../images/call-us-white.png);
+        }
+    }
+}

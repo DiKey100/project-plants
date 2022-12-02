@@ -671,4 +671,77 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #676767;
+}
+
+.main-cta {
+  width: 375px;
+  height: 224px;
+  padding: 0px 15px;
+  margin-top: 55px;
+}
+
+.cta-photo {
+  background-image: url(../images/main-cta-photo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 345px;
+  height: 224px;
+}
+
+.cta-basic {
+  position: relative;
+  top: -174px;
+  left: 41px;
+  width: 272px;
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-text {
+  width: 272px;
+  height: 54px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: white;
+}
+
+.cta-call-us {
+  width: 137px;
+  height: 40px;
+  color: #00730C;
+  text-transform: capitalize;
+  background: white;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+  border: 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta-call-us::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/call-us-green.png);
+  margin-right: 10px;
+}
+.cta-call-us:hover {
+  background: #00730C;
+  color: white;
+}
+.cta-call-us:hover::before {
+  background-image: url(../images/call-us-white.png);
 }/*# sourceMappingURL=style.css.map */
