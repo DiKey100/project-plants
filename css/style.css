@@ -568,4 +568,107 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images/main-wcu-tick.png);
+}
+
+.working-process {
+  padding: 50px 15px 0px;
+}
+
+.wp-text {
+  width: 345px;
+  height: 163px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wp-text-head {
+  width: 220px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #212529;
+  text-transform: capitalize;
+}
+.wp-text-head span {
+  color: #00730C;
+}
+
+.wp-text-basic {
+  width: 345px;
+  height: 110px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #676767;
+}
+
+.wp-4-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 345px;
+  height: 892px;
+}
+
+.wp-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 345px;
+  height: 208px;
+  padding: 20px;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
+}
+
+.wp-card-logo-and-number {
+  display: flex;
+  justify-content: space-between;
+  width: 305px;
+  height: 50px;
+}
+
+.wp-card-number {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 50px;
+  color: #E3E3E3;
+  padding-right: 10px;
+}
+
+.wp-card-text {
+  width: 305px;
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.wp-card-head {
+  width: 305px;
+  height: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #212529;
+}
+
+.wp-card-basic {
+  width: 305px;
+  height: 66px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
 }/*# sourceMappingURL=style.css.map */

@@ -185,3 +185,66 @@
 
 // Working process section
 
+.working-process {
+    padding: 50px 15px 0px;
+}
+.wp-text {
+    @include widthHeight(345px, 163px);
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: center;
+}
+.wp-text-head {
+    @include widthHeight(220px, 38px);
+    @include font(normal, 700, 28px, 38px);
+    color: $black;
+    text-transform: capitalize;
+    span {
+        color: $prime;
+    }
+}
+.wp-text-basic {
+    @include widthHeight(345px, 110px);
+    @include font(normal, 400, 14px, 22px);
+    text-align: center;
+    color: $dark-grey;
+}
+.wp-4-cards {
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: flex-start;
+    @include widthHeight(345px, 892px);
+}
+.wp-card {
+    @include flex(space-between);
+    flex-direction: column;
+    @include widthHeight(345px, 208px);
+    padding: 20px;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 10px;
+}
+.wp-card-logo-and-number {
+    @include flex(space-between);
+    @include widthHeight(305px, 50px);
+}
+.wp-card-number {
+    @include font(normal, 800, 45px, 50px);
+    color: $grey;
+    padding-right: 10px;
+}
+.wp-card-text {
+    @include widthHeight(305px, 98px);
+    @include flex(space-between);
+    flex-direction: column;
+}
+.wp-card-head {
+    @include widthHeight(305px, 22px);
+    @include font(normal, 700, 16px, 22px);
+    text-transform: capitalize;
+    color: $black;
+}
+.wp-card-basic {
+    @include widthHeight(305px, 66px);
+    @include font(normal, 400, 14px, 22px);
+    color: $dark-grey;
+}
