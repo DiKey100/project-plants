@@ -1,5 +1,5 @@
 .header {
-    @include widthHeight(100%, auto);
+    @include widthHeight(100%, 831.16px);
     @include flexBuild(center);
 }
 
@@ -89,7 +89,6 @@
 .header-banner {
     @include widthHeight(375px, 240px);
     text-align: center;
-    margin-top: 50.83px;
 }
 .header-bottom {
     @include flexBuild(center);

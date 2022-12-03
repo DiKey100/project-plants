@@ -10,7 +10,7 @@ body {
 
 .header {
   width: 100%;
-  height: auto;
+  height: 831.16px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -145,7 +145,6 @@ body {
   width: 375px;
   height: 240px;
   text-align: center;
-  margin-top: 50.83px;
 }
 
 .header-bottom {
@@ -331,11 +330,22 @@ body {
   color: #212529;
 }
 
-.services, .about-us, .your-team {
+.main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.services, .about-us, .your-team {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 50px;
 }
 
@@ -366,20 +376,25 @@ body {
   margin-bottom: 30px;
 }
 
+.service-8-sentences {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 345px;
+  height: 1068px;
+}
+
 .serv-sentence {
   width: 345px;
   height: 116px;
   padding: 20px;
-  margin-bottom: 20px;
   background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.serv-sentence:last-child {
-  margin-bottom: 0px;
 }
 
 .sentence-logo {
@@ -420,8 +435,8 @@ body {
 .au-content {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   padding-top: 30px;
   width: 345px;
   height: 421px;
