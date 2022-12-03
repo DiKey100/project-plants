@@ -438,6 +438,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
+  margin-bottom: 40px;
   width: 345px;
   height: 421px;
 }
@@ -467,20 +468,19 @@ body {
 }
 
 .au-cards {
-  padding-top: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
-  align-items: flex-start;
   width: 344px;
-  height: auto;
+  height: 208px;
+  margin-bottom: 30px;
 }
 
 .au-cards-line {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   width: 344px;
   height: 94px;
   margin-bottom: 20px;
@@ -489,8 +489,8 @@ body {
 .au-card {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   padding: 15px;
   width: 162px;
   height: 94px;
@@ -536,8 +536,8 @@ body {
   padding: 50px 15px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   width: 375px;
   height: 694px;
   color: white;
@@ -551,8 +551,8 @@ body {
 .wcu-content {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   width: 345px;
   height: 163px;
 }
@@ -580,8 +580,8 @@ body {
 .wcu-difference {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   width: 345px;
   height: 64px;
 }
@@ -604,6 +604,7 @@ body {
   text-transform: capitalize;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .wcu-diff-pick::before {
   content: "";
@@ -618,7 +619,13 @@ body {
 }
 
 .working-process {
-  padding: 50px 15px 0px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .wp-text {
@@ -626,8 +633,9 @@ body {
   height: 163px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .wp-text-head {
@@ -658,8 +666,8 @@ body {
 .wp-4-cards {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
-  align-items: flex-start;
   width: 345px;
   height: 892px;
 }
@@ -667,6 +675,7 @@ body {
 .wp-card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   width: 345px;
   height: 208px;
@@ -678,6 +687,7 @@ body {
 .wp-card-logo-and-number {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 305px;
   height: 50px;
 }
@@ -696,6 +706,7 @@ body {
   height: 98px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -738,13 +749,14 @@ body {
 .cta-basic {
   position: relative;
   top: -174px;
-  left: 41px;
+  left: 50%;
+  transform: translate(-50%, 0);
   width: 272px;
   height: 124px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .cta-text {
@@ -793,22 +805,13 @@ body {
   background-image: url(../images/call-us-white.png);
 }
 
-.your-team {
-  width: 375px;
-  height: 654px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-}
-
 .yt-texts {
   width: 345px;
   height: 233px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .yt-head {

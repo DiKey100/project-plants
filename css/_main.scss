@@ -62,6 +62,7 @@
 .au-content {
     @include flexBrick(center);
     padding-top: 30px;
+    margin-bottom: 40px;
     @include widthHeight(345px, 421px);
 }
 .au-content-head {
@@ -79,23 +80,17 @@
     color: $dark-grey;
 }
 .au-cards {
-    padding-top: 40px;
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: flex-start;
-    @include widthHeight(344px, auto);
+    @include flexBrick(space-between);
+    @include widthHeight(344px, 208px);
+    margin-bottom: 30px;
 }
 .au-cards-line {
-    @include flex(space-between);
-    flex-direction: row;
-    align-items: flex-start;
+    @include flexHead(space-between);
     @include widthHeight(344px, 94px);
     margin-bottom: 20px;
 }
 .au-card {
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: center;
+    @include flexBrick(space-between);
     padding: 15px;
     @include widthHeight(162px, 94px);
     background: $white;
@@ -130,9 +125,7 @@
     margin-top: 50px;
     background-color: $edge;
     padding: 50px 15px;
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: center;
+    @include flexBrick(space-between);
     @include widthHeight(375px, 694px);
     color: $white;
 }
@@ -140,9 +133,7 @@
     @include widthHeight(345px, 217px);
 }
 .wcu-content {
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: center;
+    @include flexBrick(space-between);
     @include widthHeight(345px, 163px);
 }
 .wcu-content-head {
@@ -156,21 +147,18 @@
     text-align: center;
 }
 .wcu-difference {
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: center;
+    @include flexBrick(space-between);
     @include widthHeight(345px, 64px);
 }
 .wcu-difference-line {
-    @include flex(space-between);
-    align-items: center;
+    @include flexHead(space-between);
     @include widthHeight(345px, 22px);
 }
 .wcu-diff-pick {
     @include widthHeight(158px, 22px);
     @include font(700, 16px, 22px);
     text-transform: capitalize;
-    @include flex(space-between);
+    @include flexHead(space-between);
     &::before {
         @include beforeAfter();
         @include widthHeight(20px, 20px);
@@ -184,13 +172,13 @@
 // Working process section
 
 .working-process {
-    padding: 50px 15px 0px;
+    padding-top: 50px;
+    @include flexBuild(center);
 }
 .wp-text {
     @include widthHeight(345px, 163px);
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: center;
+    @include flexBrick(space-between);
+    margin-bottom: 30px;
 }
 .wp-text-head {
     @include widthHeight(220px, 38px);
@@ -208,21 +196,18 @@
     color: $dark-grey;
 }
 .wp-4-cards {
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: flex-start;
+    @include flexBrick(space-between);
     @include widthHeight(345px, 892px);
 }
 .wp-card {
-    @include flex(space-between);
-    flex-direction: column;
+    @include flexBrick(space-between);
     @include widthHeight(345px, 208px);
     padding: 20px;
     box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
     border-radius: 10px;
 }
 .wp-card-logo-and-number {
-    @include flex(space-between);
+    @include flexHead(space-between);
     @include widthHeight(305px, 50px);
 }
 .wp-card-number {
@@ -232,8 +217,7 @@
 }
 .wp-card-text {
     @include widthHeight(305px, 98px);
-    @include flex(space-between);
-    flex-direction: column;
+    @include flexBrick(space-between);
 }
 .wp-card-head {
     @include widthHeight(305px, 22px);
@@ -261,12 +245,11 @@
 .cta-basic {
     position: relative;
     top: -174px;
-    left: 41px;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     @include widthHeight(272px, 124px);
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: center;
+    @include flexBrick(space-between);
 }
 .cta-text {
     @include widthHeight(272px, 54px);
@@ -283,8 +266,7 @@
     border-radius: 5px;
     border: 0px;
     @include font(700, 14px, 40px);
-    @include flex(center);
-    align-items: center;
+    @include flexHead(center);
     &::before {
         @include beforeAfter();
         @include widthHeight(20px, 20px);
@@ -303,17 +285,9 @@
 
 // your team section
 
-.your-team {
-    @include widthHeight(375px, 654px);
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: center;
-}
 .yt-texts {
     @include widthHeight(345px, 233px);
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: center;
+    @include flexBrick(space-between);
 }
 .yt-head {
     @include widthHeight(225px, 38px);
