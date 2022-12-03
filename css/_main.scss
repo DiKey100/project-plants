@@ -7,7 +7,7 @@
     padding-top: 50px;
 }
 .service-head {
-    @include font(normal, 700, 28px, 38px);
+    @include font(700, 28px, 38px);
     @include widthHeight(267px, 38px);
     color: $black;
     text-transform: capitalize;
@@ -18,7 +18,7 @@
 }
 .service-text {
     @include widthHeight(344px, 110px);
-    @include font(normal, 400, 14px, 22px);
+    @include font(400, 14px, 22px);
     text-align: center;
     color: $dark-grey;
     margin-bottom: 30px;
@@ -47,13 +47,13 @@
 }
 .sentence-head {
     @include widthHeight(auto, 22px);
-    @include font(normal, 700, 16px, 22px);
+    @include font(700, 16px, 22px);
     text-align: center;
     text-transform: capitalize; 
 }
 .sentence-text {
     @include widthHeight(235px, 44px);
-    @include font(normal, 400, 14px, 22px);
+    @include font(400, 14px, 22px);
     color: $dark-grey;
 }
 
@@ -68,7 +68,7 @@
 }
 .au-content-head {
     @include widthHeight(345px, 76px);
-    @include font(normal, 700, 28px, 38px);
+    @include font(700, 28px, 38px);
     color: $black;
     margin-bottom: 15px;
     span {
@@ -77,7 +77,7 @@
 }
 .au-content-text {
     @include widthHeight(345px, 330px);
-    @include font(normal, 400, 14px, 22px);
+    @include font(400, 14px, 22px);
     color: $dark-grey;
 }
 .au-cards {
@@ -106,14 +106,14 @@
 }
 .au-card-text {
     @include widthHeight(132px, 19px);
-    @include font(normal, 700, 14px, 19px);
+    @include font(700, 14px, 19px);
     text-align: center;
     text-transform: capitalize;
     color: $black;
 }
 .discover-more {
     @include widthHeight(167px, 40px);
-    @include font(normal, 700, 16px, 40px);
+    @include font(700, 16px, 40px);
     text-align: center;
     border: 1px $prime solid;
     border-radius: 5px;
@@ -149,12 +149,12 @@
 }
 .wcu-content-head {
     @include widthHeight(210px, 38px);
-    @include font(normal, 700, 28px, 38px);
+    @include font(700, 28px, 38px);
     text-transform: capitalize;
 }
 .wcu-content-text {
     @include widthHeight(345px, 110px);
-    @include font(normal, 400, 14px, 22px);
+    @include font(400, 14px, 22px);
     text-align: center;
 }
 .wcu-difference {
@@ -170,7 +170,7 @@
 }
 .wcu-diff-pick {
     @include widthHeight(158px, 22px);
-    @include font(normal, 700, 16px, 22px);
+    @include font(700, 16px, 22px);
     text-transform: capitalize;
     @include flex(space-between);
     &::before {
@@ -196,7 +196,7 @@
 }
 .wp-text-head {
     @include widthHeight(220px, 38px);
-    @include font(normal, 700, 28px, 38px);
+    @include font(700, 28px, 38px);
     color: $black;
     text-transform: capitalize;
     span {
@@ -205,7 +205,7 @@
 }
 .wp-text-basic {
     @include widthHeight(345px, 110px);
-    @include font(normal, 400, 14px, 22px);
+    @include font(400, 14px, 22px);
     text-align: center;
     color: $dark-grey;
 }
@@ -228,7 +228,7 @@
     @include widthHeight(305px, 50px);
 }
 .wp-card-number {
-    @include font(normal, 800, 45px, 50px);
+    @include font(800, 45px, 50px);
     color: $grey;
     padding-right: 10px;
 }
@@ -239,13 +239,13 @@
 }
 .wp-card-head {
     @include widthHeight(305px, 22px);
-    @include font(normal, 700, 16px, 22px);
+    @include font(700, 16px, 22px);
     text-transform: capitalize;
     color: $black;
 }
 .wp-card-basic {
     @include widthHeight(305px, 66px);
-    @include font(normal, 400, 14px, 22px);
+    @include font(400, 14px, 22px);
     color: $dark-grey;
 }
 
@@ -272,7 +272,7 @@
 }
 .cta-text {
     @include widthHeight(272px, 54px);
-    @include font(normal, 700, 20px, 27px);
+    @include font(700, 20px, 27px);
     text-align: center;
     color: $white;
 }
@@ -284,7 +284,7 @@
     box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
     border-radius: 5px;
     border: 0px;
-    @include font(normal, 700, 14px, 40px);
+    @include font(700, 14px, 40px);
     @include flex(center);
     align-items: center;
     &::before {
@@ -319,7 +319,7 @@
 }
 .yt-head {
     @include widthHeight(225px, 38px);
-    @include font(normal, 700, 28px, 38px);
+    @include font(700, 28px, 38px);
     text-align: center;
     color: black;
     text-transform: capitalize;
@@ -329,7 +329,7 @@
 }
 .yt-basic {
     @include widthHeight(345px, 110px);
-    @include font(normal, 400, 14px, 22px);
+    @include font(400, 14px, 22px);
     text-align: center;
     color: $dark-grey;
 }

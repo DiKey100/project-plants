@@ -1,23 +1,24 @@
 .header {
-    width: 100%;
+    @include widthHeight(100%, auto);
+    @include flexBuild(center);
 }
 
 .header-top {
-    height: 55px;
-    @include flex(space-between);
-    align-items: center;
+    @include widthHeight(375px, 55px);
+    @include flexHead(space-between);
     background-color: $edge;
     padding: 0px 20px;
-    position: relative;
 }
 .header-logo-links {
-    @include flex(space-between);
-    width: 100px;
-    height: 20px;
+    @include flexHead(space-between);
+    @include widthHeight(100px, 20px);
 }
 .header-mail, .header-call, .header-location {
     @include image();
-    width: 20px;
+    @include widthHeight(20px, 20px);
+    &:hover {
+        cursor: pointer;
+    }
 }
 .header-mail {
     background-image: url(../images/header-mail.png);
@@ -29,13 +30,12 @@
     background-image: url(../images/header-location.png);
 }
 .choice-language {
-    @include flex(flex-start);
-    align-items: center;
+    @include flexHead(center);
+    @include widthHeight(52px, 16px);
     color: $white;
-    @include font(normal, 400, 12px, 16px);
+    @include font(400, 12px, 16px);
     &:after {
-        content: "";
-        display: block;
+        @include beforeAfter();
         padding-left: 5px;
         @include widthHeight(7px, 4px);
         background-image: url(../images/header-arrow.png);
@@ -44,20 +44,22 @@
 }
 
 .header-middle {
-    @include widthHeight(100%, 70px);
-    @include flex(space-between);
-    align-items: center;
+    @include widthHeight(376px, 70px);
+    @include flexHead(space-between);
     padding: 0px 15px;
     background-color: $white;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
     position: absolute;
     top: 55px;
+    left: calc(50% - 1px);
+    transform: translate(-50%, 0);
+    right: 0px;
 }
 .header-logo {
     @include widthHeight(90px, 40px);
 }
 .button-links {
-    @include flex(space-between);
+    @include flexHead(space-between);
     @include widthHeight(110px, 34px);
     flex-wrap: wrap;
 }
@@ -85,22 +87,24 @@
 }
 
 .header-banner {
-    background: #C4C4C4;
-    @include widthHeight(100%, 240px);
+    @include widthHeight(375px, 240px);
     text-align: center;
-    @include font(normal, 600, 28px, 240px);
-    color: $black;
     margin-top: 50.83px;
 }
+.header-bottom {
+    @include flexBuild(center);
+    @include widthHeight(375px, 706.17px);
+}
 .header-bottom-content {
-    @include widthHeight(100%, 466.17px);
+    @include widthHeight(375px, 466.17px);
+    @include flexBuild(normal);
     background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
     padding-top: 47.63px;
-    padding-left: 14.5px;
+    padding-bottom: 35px;
 }
 .head-bottom-sub-head {
-    @include font(normal, 700, 14px, 19px);
-    @include flex(flex-start);
+    @include font(700, 14px, 19px);
+    @include flexHead(flex-start);
     color: $black;
     margin-bottom: 10px;
     &::before {
@@ -112,39 +116,41 @@
     }
 }
 .head-bottom-head {
-    @include font(normal, 700, 28px, 38px);
+    @include font(700, 28px, 38px);
     color: $black;
     margin-bottom: 15px;
-    margin-right: 15.5px;
     span {
         color: $prime;
     }
 }
 .head-bottom-text {
-    @include font(normal, 400, 14px, 22px);
-    margin-right: 15.5px;
+    @include font(400, 14px, 22px);
     margin-bottom: 40px;
 }
 .get-a-quate {
     padding: 12px 105px;
-    @include widthHeight(303px, 44px);
+    @include widthHeight(304px, 44px);
     background: $prime;
     border-radius: 5px;
-    border: 0px;
-    @include font(normal, 700, 16px, 20px);
+    border: 1px $prime solid;
+    @include font(700, 16px, 20px);
     text-transform: capitalize;
     color: $white;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     margin-bottom: 19px;
+    &:hover {
+        background: $white;
+        color: $prime;
+        cursor: pointer;
+    }
 }
 .see-work {
-    @include font(normal, 600, 14px, 19px);
+    @include font(600, 14px, 19px);
     color: $prime;
     text-align: center;
-    @include flex(center);
-    align-items: center;
+    @include flexHead(center);
     margin-bottom: 40px;
     &::after {
         @include beforeAfter();
@@ -155,17 +161,17 @@
     }
 }
 .flower-head-left {
-    position: absolute;
-    top: 675px;
+    position: relative;
+    top: 0px;
     left: -10px;
     background-image: url(../images/flower-head-left.png);
     @include image();
     @include widthHeight(83px, 133px);
 }
 .two-buttons-header {
-    @include flex(space-between);
-    @include widthHeight(276px, 32px);
-    margin-left: 22.66%;
+    @include flexHead(space-between);
+    @include widthHeight(345px, 32px);
+    padding-left: 70px;
 }
 .first-button {
     @include widthHeight(135px, 32px);
@@ -174,19 +180,16 @@
 .second-button {
     @include widthHeight(128px, 32px);
     background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
-    gap: 8px;
 }
 .first-button, .second-button {
-    @include flex(space-between);
-    align-items: center;
-    flex-direction: row;
+    @include flexHead(space-between);
     padding: 8px 10px;
     border-radius: 32px;
     border: 0px;
 }
 .button-number {
     @include widthHeight(29px, 16px);
-    @include font(normal, 700, 12px, 16px);
+    @include font(700, 12px, 16px);
     color: $black;
 }
 .button-first-text {
@@ -196,6 +199,6 @@
     @include widthHeight(74px, 14px);
 }
 .button-first-text, .button-second-text {
-    @include font(normal, 400, 10px, 14px);
+    @include font(400, 10px, 14px);
     color: $black;
 }
