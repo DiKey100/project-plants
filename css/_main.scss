@@ -4,7 +4,7 @@
 
 // services section
 
-.services, .about-us, .your-team {
+.services, .about-us, .your-team, .main-content {
     @include flexBuild(center);
     padding-top: 50px;
 }
@@ -426,4 +426,62 @@
     @include widthHeight(48px, 16px);
     @include font(400, 12px, 16px);
     color: $dark-grey;
+}
+
+// content section
+.main-content {
+    @include widthHeight(375px, 805px);
+}
+.mcon-text {
+    @include flexBrick(space-between);
+    @include widthHeight(345px, 201px);
+    margin-bottom: 42px;
+}
+.mcon-text-head {
+    @include widthHeight(220px, 76px);
+    @include font(700, 28px, 38px);
+    text-align: center;
+    text-transform: capitalize;
+    color: $black;
+    span {
+        color: $prime;
+    }
+}
+.mcon-text-basic {
+    @include widthHeight(345px, 110px);
+    @include font(400, 14px, 22px);
+    text-align: center;
+    color: $dark-grey;
+}
+.mcon-questions-answers {
+    @include flexBrick(space-between);
+    @include widthHeight(345px, 562px);
+}
+.mcon-question {
+    @include flex(space-between);
+    @include widthHeight(345px, 44px);
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background: $coral;
+    &:first-child {
+        background: $prime;
+        .mcon-question-text {
+            color: $white;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+.mcon-question-text {
+    @include widthHeight(285px, 19px);
+    @include font(600, 14px, 19px);
+    color: $black;
+}
+.mcon-answer {
+    @include widthHeight(313px, 242px);
+    @include font(400, 14px, 22px);
+    color: $dark-grey;
+    margin-bottom: 20px;
 }
