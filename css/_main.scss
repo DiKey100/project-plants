@@ -284,10 +284,13 @@
 }
 
 // your team section
-
+.your-team {
+    @include widthHeight(375px, auto);
+}
 .yt-texts {
     @include widthHeight(345px, 233px);
     @include flexBrick(space-between);
+    // margin-bottom: 40px;
 }
 .yt-head {
     @include widthHeight(225px, 38px);
@@ -295,6 +298,7 @@
     text-align: center;
     color: black;
     text-transform: capitalize;
+    margin-bottom: 15px;
     span {
         color: $prime;
     }
@@ -304,4 +308,51 @@
     @include font(400, 14px, 22px);
     text-align: center;
     color: $dark-grey;
+    margin-bottom: 30px;
+}
+.yt-slider {
+    @include flexBrick(space-between);
+    margin-top: 93px;
+}
+.yt-card {
+    @include widthHeight(345px, 343px);
+    @include flexBrick(center);
+    // margin-bottom: 30px;
+}
+.yt-card-text {
+    @include widthHeight(345px, 62px);
+    @include flexBrick(center);
+    background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+    border-radius: 5px;
+    color: $white;
+    margin-top: 40px;
+    position: relative;
+    top: -108px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.yt-card-name {
+    @include font(700, 18px, 25px);
+    @include widthHeight(105px, 25px);
+    text-transform: capitalize;
+}
+.yt-card-post {
+    @include font(400, 14px, 22px);
+    @include widthHeight(90px, 22px);
+    text-transform: capitalize;
+}
+.yt-slider-lines {
+    @include widthHeight(178px, 6px);
+    @include flexHead(space-between);
+    margin-top: -24px;
+}
+.yt-slider-small-line {
+    @include widthHeight(20px, 6px);
+    background: $prime;
+    border-radius: 8px;
+}
+.yt-slider-big-line {
+    @include widthHeight(50px, 6px);
+    background: $prime;
+    border-radius: 8px;
 }

@@ -805,6 +805,11 @@ body {
   background-image: url(../images/call-us-white.png);
 }
 
+.your-team {
+  width: 375px;
+  height: auto;
+}
+
 .yt-texts {
   width: 345px;
   height: 233px;
@@ -824,6 +829,7 @@ body {
   text-align: center;
   color: black;
   text-transform: capitalize;
+  margin-bottom: 15px;
 }
 .yt-head span {
   color: #00730C;
@@ -838,4 +844,82 @@ body {
   line-height: 22px;
   text-align: center;
   color: #676767;
+  margin-bottom: 30px;
+}
+
+.yt-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 93px;
+}
+
+.yt-card {
+  width: 345px;
+  height: 343px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.yt-card-text {
+  width: 345px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+  border-radius: 5px;
+  color: white;
+  margin-top: 40px;
+  position: relative;
+  top: -108px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.yt-card-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  width: 105px;
+  height: 25px;
+  text-transform: capitalize;
+}
+
+.yt-card-post {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  width: 90px;
+  height: 22px;
+  text-transform: capitalize;
+}
+
+.yt-slider-lines {
+  width: 178px;
+  height: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -24px;
+}
+
+.yt-slider-small-line {
+  width: 20px;
+  height: 6px;
+  background: #00730C;
+  border-radius: 8px;
+}
+
+.yt-slider-big-line {
+  width: 50px;
+  height: 6px;
+  background: #00730C;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */
