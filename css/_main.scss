@@ -430,7 +430,7 @@
 
 // content section
 .main-content {
-    @include widthHeight(375px, 805px);
+    @include widthHeight(375px, auto);
 }
 .mcon-text {
     @include flexBrick(space-between);
@@ -478,6 +478,11 @@
     @include widthHeight(285px, 19px);
     @include font(600, 14px, 19px);
     color: $black;
+}
+.mcon-question-minus, .mcon-question-plus {
+    &:hover {
+        cursor: pointer;
+    }
 }
 .mcon-answer {
     @include widthHeight(313px, 242px);

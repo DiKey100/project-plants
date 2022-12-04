@@ -1047,7 +1047,7 @@ body {
 
 .main-content {
   width: 375px;
-  height: 805px;
+  height: auto;
 }
 
 .mcon-text {
@@ -1123,6 +1123,10 @@ body {
   font-size: 14px;
   line-height: 19px;
   color: #212529;
+}
+
+.mcon-question-minus:hover, .mcon-question-plus:hover {
+  cursor: pointer;
 }
 
 .mcon-answer {
