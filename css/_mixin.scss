@@ -7,6 +7,12 @@
     justify-content: $justify;
     align-items: center;
 }
+@mixin flexStart () {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
 @mixin flexBrick($justify) {
     display: flex;
     justify-content: $justify;
