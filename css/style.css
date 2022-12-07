@@ -1180,7 +1180,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   padding: 30px 20px;
-  filter: drop-shadow(2px 11px 30px rgba(51, 51, 51, 0.08));
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   background-image: url(../images/main-blog-back-image.png);
   background-repeat: no-repeat;
   background-position: 225px 0px;
@@ -1278,4 +1278,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 10px;
+}
+
+.company-logos {
+  width: 315px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.company-logos img {
+  mix-blend-mode: luminosity;
 }/*# sourceMappingURL=style.css.map */
