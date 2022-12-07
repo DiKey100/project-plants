@@ -33,6 +33,13 @@
     font-size: $size;
     line-height: $heightPX;
 }
+@mixin fontP($weight, $size, $height) {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
 @mixin widthHeight($width, $height) {
     width: $width;
     height: $height;

@@ -5,32 +5,77 @@
 
 .header-top {
     @include widthHeight(100%, 55px);
-    @include flexHead(space-between);
     background-color: $edge;
     padding: 22px 20px 17px;
+    @media (min-width: 1510px) {
+        @include flexHead(center);
+        padding: 17px 0px;
+
+    }
+}
+.header-top-block {
+    @include flexHead(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(1420px, 25px);
+    }
 }
 .header-logo-links {
     @include flexHead(space-between);
     @include widthHeight(100px, 20px);
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 25px);
+    }
 }
 .header-mail, .header-call, .header-location {
     @include image();
     @include widthHeight(20px, 20px);
-    &:hover {
-        cursor: pointer;
+    @media (min-width: 1510px) {
+        @include widthHeight(25px, 25px);
+        margin-right: 10px;
     }
 }
 .header-mail {
     background-image: url(../images/header-mail.png);
+    @media (min-width: 1510px) {
+        background-image: url(../images/destop/dheader-mail.png);
+    }
 }
 .header-call {
     background-image: url(../images/header-call.png);
+    @media (min-width: 1510px) {
+        background-image: url(../images/destop/dheader-call.png);
+    }
 }
 .header-location {
     background-image: url(../images/header-location.png);
+    @media (min-width: 1510px) {
+        background-image: url(../images/destop/dheader-location.png);
+    }
 }
 .header-mail-text, .header-call-text, .header-location-text {
     display: none;
+    @media (min-width: 1510px) {
+        display: block;
+        @include fontP(400, 14px, 25px);
+        color: $white;
+        margin-right: 30px;
+    }
+}
+.header-mail-text {
+    @media (min-width: 1510px) {
+        @include widthHeight(245px, 25px);
+    }
+}
+.header-call-text {
+    @media (min-width: 1510px) {
+        @include widthHeight(100px, 25px);
+    }
+}
+.header-location-text {
+    @media (min-width: 1510px) {
+        @include widthHeight(237px, 25px);
+        margin-right: 0px;
+    }
 }
 .choice-language {
     @include flexHead(center);
@@ -43,6 +88,18 @@
         @include widthHeight(7px, 4px);
         background-image: url(../images/header-arrow.png);
         @include image();
+    }
+    @media (min-width: 1510px) {
+        @include widthHeight(66px, 25px);
+        @include fontP(400, 14px, 25px);
+        color: $white;
+        &::after {
+            @include beforeAfter();
+            @include widthHeight(12px, 7px);
+            @include image();
+            background-image: url(../images/destop/dheader-arrow.png);
+            margin-left: 5px;
+        }
     }
 }
 
