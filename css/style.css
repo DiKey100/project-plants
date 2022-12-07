@@ -154,6 +154,7 @@ body {
   padding-right: 15px;
   width: 100%;
   height: auto;
+  margin-top: 1px;
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
 }
 
@@ -328,16 +329,7 @@ body {
   color: #212529;
 }
 
-.main {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.services, .about-us, .your-team, .main-content, .main-blog {
+.services, .about-us, .why-choose-us {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -530,15 +522,13 @@ body {
 
 .why-choose-us {
   margin-top: 50px;
-  background-color: #0C4B35;
-  padding: 50px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 375px;
+  background: #0C4B35;
+  width: 100%;
   height: 694px;
   color: #FFFFFF;
+}
+.why-choose-us button {
+  margin-bottom: 50px;
 }
 
 .wcu-photo {
@@ -730,7 +720,7 @@ body {
 }
 
 .main-cta {
-  width: 375px;
+  width: 100%;
   height: 224px;
   padding: 0px 15px;
   margin-top: 55px;
@@ -740,7 +730,7 @@ body {
   background-image: url(../images/main-cta-photo.png);
   background-position: center;
   background-repeat: no-repeat;
-  width: 345px;
+  width: 100%;
   height: 224px;
 }
 
@@ -803,8 +793,18 @@ body {
   background-image: url(../images/call-us-white.png);
 }
 
+.your-team, .main-content, .main-blog {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+}
+
 .your-team {
-  width: 375px;
+  width: 100%;
   height: auto;
 }
 
@@ -929,13 +929,14 @@ body {
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
-  width: 375px;
+  width: 100%;
   height: 687px;
   padding-top: 50px;
   margin-top: 50px;
   background-image: url(../images/main-cs-background.png);
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 100% 585px;
 }
 
 .cs-text {
@@ -1042,7 +1043,7 @@ body {
 }
 
 .main-content {
-  width: 375px;
+  width: 100%;
   height: auto;
 }
 

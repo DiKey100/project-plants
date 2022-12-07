@@ -1,0 +1,302 @@
+.your-team, .main-content, .main-blog {
+    @include flexBuild(center);
+    padding-top: 50px;
+}
+
+// your team section
+.your-team {
+    @include widthHeight(100%, auto);
+}
+.yt-texts {
+    @include widthHeight(345px, 233px);
+    @include flexBrick(space-between);
+}
+.yt-head {
+    @include widthHeight(225px, 38px);
+    @include font(700, 28px, 38px);
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    span {
+        color: $prime;
+    }
+}
+.yt-basic {
+    @include widthHeight(345px, 110px);
+    @include font(400, 14px, 22px);
+    text-align: center;
+    color: $dark-grey;
+    margin-bottom: 30px;
+}
+.yt-slider {
+    @include flexBrick(space-between);
+    margin-top: 93px;
+}
+.yt-card {
+    @include widthHeight(345px, 343px);
+    @include flexBrick(center);
+    // margin-bottom: 30px;
+}
+.yt-card-text {
+    @include widthHeight(345px, 62px);
+    @include flexBrick(center);
+    background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+    border-radius: 5px;
+    color: $white;
+    margin-top: 40px;
+    position: relative;
+    top: -108px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.yt-card-name {
+    @include font(700, 18px, 25px);
+    @include widthHeight(105px, 25px);
+    text-transform: capitalize;
+}
+.yt-card-post {
+    @include font(400, 14px, 22px);
+    @include widthHeight(90px, 22px);
+    text-transform: capitalize;
+}
+.yt-slider-lines {
+    @include widthHeight(178px, 6px);
+    @include flexHead(space-between);
+    margin-top: -24px;
+}
+.yt-slider-small-line {
+    @include widthHeight(20px, 6px);
+    background: $prime;
+    border-radius: 8px;
+}
+.yt-slider-big-line {
+    @include widthHeight(50px, 6px);
+    background: $prime;
+    border-radius: 8px;
+}
+
+// clienys saying section
+.clients-saying {
+    @include flexBuild(center);
+    @include widthHeight(100%, 687px);
+    padding-top: 50px;
+    margin-top: 50px;
+    background-image: url(../images/main-cs-background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 585px;
+}
+.cs-text {
+    @include widthHeight(345px, 163px);
+    @include flexBrick(space-between);
+}
+.cs-text-head {
+    @include widthHeight(270px, 38px);
+    @include font(700, 28px, 38px);
+    color: black;
+    text-transform: capitalize;
+    span {
+        color: $prime;
+    }
+}
+.cs-text-basic {
+    @include widthHeight(345px, 110px);
+    @include font(400, 14px, 22px);
+    text-align: center;
+    color: $dark-grey;
+}
+.cs-review {
+    @include widthHeight(345px, 431px);
+    @include flexStart();
+    padding: 20px;
+    background: $white;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+}
+.cs-rev-photo {
+    margin-bottom: 30px;
+}
+.cs-rev-text {
+    @include widthHeight(305px, 123px);
+    @include font(400, 14px, 22px);
+    color: $dark-grey;
+    padding-top: 13.76px;
+    margin-bottom: 15px;
+    background-image: url(../images/main-review-qoutes.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.cs-rev-info {
+    @include widthHeight(305px, 40px);
+    @include flexHead(space-between);
+}
+.cs-rev-info-text {
+    @include flexStart();
+    @include widthHeight(81px, 40px);
+}
+.cs-rev-info-name {
+    @include widthHeight(81px, 22px);
+    @include font(700, 16px, 22px);
+    text-transform: capitalize;
+    color: $black;
+}
+.cs-rev-info-post {
+    @include widthHeight(48px, 16px);
+    @include font(400, 12px, 16px);
+    color: $dark-grey;
+}
+
+// content section
+.main-content {
+    @include widthHeight(100%, auto);
+}
+.mcon-text {
+    @include flexBrick(space-between);
+    @include widthHeight(345px, 201px);
+    margin-bottom: 42px;
+}
+.mcon-text-head {
+    @include widthHeight(220px, 76px);
+    @include font(700, 28px, 38px);
+    text-align: center;
+    text-transform: capitalize;
+    color: $black;
+    span {
+        color: $prime;
+    }
+}
+.mcon-text-basic {
+    @include widthHeight(345px, 110px);
+    @include font(400, 14px, 22px);
+    text-align: center;
+    color: $dark-grey;
+}
+.mcon-questions-answers {
+    @include flexBrick(space-between);
+    @include widthHeight(345px, 562px);
+}
+.mcon-question {
+    @include flexHead(space-between);
+    @include widthHeight(345px, 44px);
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background: $coral;
+    &:first-child {
+        background: $prime;
+        .mcon-question-text {
+            color: $white;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+.mcon-question-text {
+    @include widthHeight(285px, 19px);
+    @include font(600, 14px, 19px);
+    color: $black;
+}
+.mcon-question-minus, .mcon-question-plus {
+    @include widthHeight(20px, 20px);
+    &:hover {
+        cursor: pointer;
+    }
+}
+.mcon-answer {
+    @include widthHeight(313px, 242px);
+    @include font(400, 14px, 22px);
+    color: $dark-grey;
+    margin-bottom: 20px;
+}
+
+// main blog section
+.mb-text {
+    @include flexBrick(space-between);
+    @include widthHeight(345px, 168px);
+}
+.mb-text-head {
+    @include widthHeight(297px, 38px);
+    @include font(700, 28px, 38px);
+    color: $black;
+    text-transform: capitalize;
+    span {
+        color: $prime;
+    }
+}
+.mb-text-basic {
+    @include widthHeight(345px, 110px);
+    @include font(400, 14px, 22px);
+    text-align: center;
+    color: $dark-grey;
+}
+.mb-card {
+    @include widthHeight(345px, 408px);
+    @include flexStart();
+    padding: 30px 20px;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    background-image: url(../images/main-blog-back-image.png);
+    background-repeat: no-repeat;
+    background-position: 225px 0px;
+}
+.mb-card-tag {
+    @include widthHeight(122px, 30px);
+    background: #D9F1E0;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+    @include font(600, 18px, 30px);
+    text-align: center;
+    color: $prime;
+    margin-bottom: 40px;
+}
+.mb-card-text {
+    @include widthHeight(305px, 213px);
+    @include flexStart();
+    margin-bottom: 30px;
+}
+.mb-card-text-head {
+    @include widthHeight(277px, 44px);
+    @include font(700, 16px, 22px);
+    text-transform: capitalize;
+    color: $prime;
+    margin-bottom: 15px;
+}
+.mb-card-text-basic {
+    @include widthHeight(305px, 154px);
+    @include font(400, 14px, 22px);
+    color: $dark-grey;
+}
+.mb-card-separator {
+    @include widthHeight(305px, 1px);
+    background: $grey;
+    margin-bottom: 10px;
+}
+.mb-card-info {
+    @include flexHead(space-between);
+    @include widthHeight(305px, 24px);
+}
+.mb-card-info-data {
+    @include widthHeight(81px, 24px);
+    @include font(700, 14px, 19px);
+    color: $dark-grey;
+}
+.mb-card-info-profile {
+    @include widthHeight(85px, 20px);
+    @include flexHead(center);
+    @include font(400, 14px, 22px);
+    color: $dark-grey;
+    &::before {
+        @include beforeAfter();
+        @include widthHeight(20px, 20px);
+        background-image: url(../images/main-blog-card-prof.png);
+        @include image();
+        margin-right: 10px;
+    }
+}
+.company-logos {
+    @include widthHeight(315px, 70px);
+    @include flexHead(space-between);
+    margin-top: 50px;
+    img {
+        mix-blend-mode: luminosity;
+    }
+}
