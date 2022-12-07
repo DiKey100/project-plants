@@ -1452,15 +1452,17 @@ body {
 
 .footer-subscribe {
   margin-top: -40px;
-  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   width: 344px;
-  height: 167px;
+  height: auto;
 }
 
+.footer-sub-basic {
+  margin-bottom: 15px;
+}
 .footer-sub-basic form {
   border-bottom: 1px #FFFFFF solid;
   width: 344px;

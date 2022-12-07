@@ -39,11 +39,11 @@
 }
 .footer-subscribe {
     margin-top: -40px;
-    margin-bottom: 15px;
     @include flexStart();
-    @include widthHeight(344px, 167px);
+    @include widthHeight(344px, auto);
 }
 .footer-sub-basic {
+    margin-bottom: 15px;
     form {
         border-bottom: 1px $white solid; 
         @include widthHeight(344px, 30px);
