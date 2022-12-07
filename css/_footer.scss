@@ -1,0 +1,72 @@
+.footer {
+    @include flexBuild(center);
+    margin-top: 140px;
+    background: $edge;
+    color: $white;
+}
+.link-for-button {
+    @include widthHeight(320px, 179px);
+    @include flexBrick(space-between);
+    padding: 30px 50px;
+    background: #D9F1E0;
+    border-radius: 5px;
+
+    position: relative;
+    top: -90px;
+}
+.footer-button-text {
+    @include font(700, 20px, 27px);
+    text-align: center;
+    text-transform: capitalize;
+    color: $black;
+    span {
+        color: $prime;
+    }
+}
+.small-get-a-quate {
+    @include widthHeight(153px, 40px);
+    text-align: center;
+    @include font(700, 16px, 38px);
+    color: $white;
+    text-transform: capitalize;
+    border-radius: 5px;
+    background: $prime;
+    border: 1px $prime solid;
+    &:hover {
+        background: $white;
+        color: $prime;
+    }
+}
+.footer-subscribe {
+    margin-top: -40px;
+    @include flexStart();
+    @include widthHeight(344px, 167px);
+}
+.footer-sub-basic {
+    form {
+        border-bottom: 1px $white solid; 
+        @include widthHeight(344px, 30px);
+        @include flexHead(space-between);
+    }
+}
+.footer-sub-head {
+    @include widthHeight(205px, 25px);
+    @include font(700, 18px, 25px);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.footer-sub-text {
+    @include widthHeight(345px, 66px);
+    @include font(400, 14px, 22px);
+    margin-bottom: 30px;
+}
+.foot-wr-let-email {
+    @include widthHeight(200px, 30px);
+    @include font(400, 14px, 46px);
+    background: none;
+    border: 0;
+    color: $white;
+    &::placeholder {
+        color: $white;
+    }
+}

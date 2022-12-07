@@ -42,9 +42,7 @@
 }
 .sentence-texts {
     @include widthHeight(235px, 76px);
-    @include flex(space-between);
-    flex-direction: column;
-    align-items: flex-start;
+    @include flexStart();
 }
 .sentence-head {
     @include widthHeight(auto, 22px);
@@ -455,7 +453,7 @@
     @include widthHeight(345px, 562px);
 }
 .mcon-question {
-    @include flex(space-between);
+    @include flexHead(space-between);
     @include widthHeight(345px, 44px);
     padding: 12px 20px;
     margin-bottom: 20px;
@@ -477,6 +475,7 @@
     color: $black;
 }
 .mcon-question-minus, .mcon-question-plus {
+    @include widthHeight(20px, 20px);
     &:hover {
         cursor: pointer;
     }
