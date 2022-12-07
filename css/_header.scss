@@ -1,10 +1,10 @@
 .header {
     @include widthHeight(100%, 831.16px);
-    @include flexBuild(center);
+    @include flexBrick(space-between);
 }
 
 .header-top {
-    @include widthHeight(375px, 55px);
+    @include widthHeight(100%, 55px);
     @include flexHead(space-between);
     background-color: $edge;
     padding: 0px 20px;
@@ -44,7 +44,7 @@
 }
 
 .header-middle {
-    @include widthHeight(376px, 70px);
+    @include widthHeight(100%, 70px);
     @include flexHead(space-between);
     padding: 0px 15px;
     background-color: $white;

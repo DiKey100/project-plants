@@ -13,14 +13,12 @@ body {
   height: 831.16px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  flex-direction: column;
 }
 
 .header-top {
-  width: 375px;
+  width: 100%;
   height: 55px;
   display: flex;
   justify-content: space-between;
@@ -83,7 +81,7 @@ body {
 }
 
 .header-middle {
-  width: 376px;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: space-between;
