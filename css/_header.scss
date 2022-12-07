@@ -11,7 +11,7 @@
         @include widthHeight(100%, 60px);
         @include flexHead(center);
         padding: 17px 0px;
-
+        background: $edge;
     }
 }
 .header-top-block {
@@ -105,9 +105,7 @@
 }
 
 .header-middle {
-    @include widthHeight(100%, 70px);
-    @include flexHead(space-between);
-    padding: 0px 15px;
+    @include widthHeight(100%, 70px); 
     background-color: $white;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
     position: absolute;
@@ -115,17 +113,44 @@
     left: calc(50% - 1px);
     transform: translate(-50%, 0);
     right: 0px;
+    @media (min-width: 1510px) {
+        @include widthHeight(100%, 85px);
+        top: 60px;
+        padding: 15px 0px;
+        @include flexHead(center);
+    }
+}
+.header-middle-block {
+    @include flexHead(space-between);
+    @include widthHeight(100%, 70px);
+    padding: 0px 15px;
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 55px);
+        padding: 0px;
+    }
 }
 .header-logo {
     @include widthHeight(90px, 40px);
+    background-image: url(../images/header-logo.png);
+    @include image();
+    @media (min-width: 1510px) {
+        @include widthHeight(120px, 55px);
+        background-image: url(../images/destop/dheader-logo.png);
+    }
 }
 .button-links {
     @include flexHead(space-between);
     @include widthHeight(110px, 34px);
     flex-wrap: wrap;
+    @media (min-width: 1510px) {
+        @include widthHeight(900px, 50px);
+    }
 }
 .menu-pages {
     display: none;
+    @media (min-width: 1510px) {
+        @include flexHead(space-between);
+    }
 }
 .call-us {
     background-image: url(../images/call-us-white.png);
