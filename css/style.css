@@ -1357,6 +1357,7 @@ body {
 
 .footer-subscribe {
   margin-top: -40px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1396,7 +1397,7 @@ body {
 }
 
 .foot-wr-let-email {
-  width: 200px;
+  width: 233px;
   height: 30px;
   font-style: normal;
   font-weight: 400;
@@ -1414,4 +1415,80 @@ body {
 }
 .foot-wr-let-email::placeholder {
   color: #FFFFFF;
+}
+
+.foot-wr-let-button {
+  width: 106px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  border: 0;
+  padding: 0px;
+  margin-right: 5px;
+  background: none;
+  color: #FFFFFF;
+}
+.foot-wr-let-button:hover {
+  cursor: pointer;
+}
+
+.links-for-network {
+  width: 340px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link-for-facebook, .link-for-twitter, .link-for-google, .link-for-in {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px #FFFFFF solid;
+  background: none;
+  margin-right: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.link-for-facebook:hover, .link-for-twitter:hover, .link-for-google:hover, .link-for-in:hover {
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.link-for-facebook {
+  background-image: url(../images/footer-facebook-white.png);
+}
+.link-for-facebook:hover {
+  background-image: url(../images/footer-facebook-green.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link-for-twitter {
+  background-image: url(../images/footer-twitter-white.png);
+}
+.link-for-twitter:hover {
+  background-image: url(../images/footer-twitter-green.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link-for-google {
+  background-image: url(../images/footer-google-white.png);
+}
+.link-for-google:hover {
+  background-image: url(../images/footer-google-green.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link-for-in {
+  background-image: url(../images/footer-in-white.png);
+}
+.link-for-in:hover {
+  background-image: url(../images/footer-in-green.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

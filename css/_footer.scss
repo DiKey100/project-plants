@@ -39,6 +39,7 @@
 }
 .footer-subscribe {
     margin-top: -40px;
+    margin-bottom: 15px;
     @include flexStart();
     @include widthHeight(344px, 167px);
 }
@@ -61,12 +62,69 @@
     margin-bottom: 30px;
 }
 .foot-wr-let-email {
-    @include widthHeight(200px, 30px);
+    @include widthHeight(233px, 30px);
     @include font(400, 14px, 46px);
     background: none;
     border: 0;
     color: $white;
     &::placeholder {
         color: $white;
+    }
+}
+.foot-wr-let-button {
+    @include widthHeight(106px, 30px);
+    @include font(700, 22px, 30px);
+    border: 0;
+    padding: 0px;
+    margin-right: 5px;
+    background: none;
+    color: $white;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.links-for-network {
+    @include widthHeight(340px, 30px);
+    @include flexHead(flex-start);
+    
+}
+.link-for-facebook, .link-for-twitter, .link-for-google, .link-for-in {
+    @include widthHeight(30px, 30px);
+    border-radius: 50%;
+    border: 1px $white solid;
+    background: none;
+    margin-right: 20px;
+    @include image();
+    &:hover {
+        background: $white;
+        cursor: pointer;
+    }
+}
+.link-for-facebook {
+    background-image: url(../images/footer-facebook-white.png);
+    &:hover {
+        background-image: url(../images/footer-facebook-green.png);
+        @include image();
+    }
+}
+.link-for-twitter {
+    background-image: url(../images/footer-twitter-white.png);
+    &:hover {
+        background-image: url(../images/footer-twitter-green.png);
+        @include image();
+    }
+}
+.link-for-google {
+    background-image: url(../images/footer-google-white.png);
+    &:hover {
+        background-image: url(../images/footer-google-green.png);
+        @include image();
+    }
+}
+.link-for-in {
+    background-image: url(../images/footer-in-white.png);
+    &:hover {
+        background-image: url(../images/footer-in-green.png);
+        @include image();
     }
 }
