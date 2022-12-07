@@ -8,6 +8,7 @@
     background-color: $edge;
     padding: 22px 20px 17px;
     @media (min-width: 1510px) {
+        @include widthHeight(100%, 60px);
         @include flexHead(center);
         padding: 17px 0px;
 
