@@ -128,3 +128,53 @@
         @include image();
     }
 }
+.contacts {
+    margin-top: 40px;
+    @include flexStart();
+    @include widthHeight(345px, 126px);
+}
+.foot-contact-head {
+    @include font(700, 18px, 25px);
+    margin-bottom: 15px;
+}
+.foot-contact-address, .foot-contact-phone, .foot-contact-email {
+    @include font(400, 14px, 22px);
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+.useful-links {
+    @include widthHeight(345px, 158px);
+    @include flexStart();
+    margin-top: 40px;
+}
+.foot-ul-head {
+    @include font(700, 18px, 25px);
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.foot-ul-table {
+    @include widthHeight(260px, 118px);
+    @include flexHead(space-between);
+}
+.foot-ul-line-1 {
+    @include widthHeight(76px, 118px);
+    @include flexStart();
+    margin-right: 99px;
+}
+.foot-ul-line-2 {
+    @include widthHeight(85px, 118px);
+    @include flexStart();
+}
+.foot-ul-item {
+    @include font(400, 14px, 22px);
+    @include flexHead(space-between);
+    &:before{
+        @include beforeAfter();
+        @include widthHeight(6px, 10px);
+        background-image: url(../images/footer-ul-arrow.png);
+        @include image();
+        margin-right: 10px;
+    }
+}
