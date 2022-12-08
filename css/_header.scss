@@ -150,20 +150,100 @@
     display: none;
     @media (min-width: 1510px) {
         @include flexHead(space-between);
+        @include widthHeight(627px, 20px);
+        & [class*="page-"] {
+            @include font(700, 16px, 20px);
+            color: $black;
+            @include flexHead(center);
+            &::after {
+                @include widthHeight(12px, 7px);
+                @include beforeAfter();
+                @include image();
+                margin-left: 5px;
+                background-image: url(../images/destop/dheader-mid-arr-black.png);
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            &:hover {
+                color: $prime;
+                cursor: pointer;
+                &::after {
+                    background-image: url(../images/destop/dheader-mid-arr-green.png);
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
+.page-home {
+    @include widthHeight(62px, 20px);
+}
+.page-company {
+    @include widthHeight(87px, 20px);
+}
+.page-services {
+    @include widthHeight(79px, 20px);
+}
+.page-project {
+    @include widthHeight(70px, 20px);
+}
+.page-blog {
+    @include widthHeight(51px, 20px);
+}
+.page-contact {
+    @include widthHeight(58px, 20px);
+}
 .call-us {
-    background-image: url(../images/call-us-white.png);
-    @include image();
     @include widthHeight(40px, 34px);
+    @include flexHead(center);
     border: 1px $prime solid;
     border-radius: 10px;
     background-color: $prime;
     &:hover {
-        background-image: url(../images/call-us-green.png);
-        @include image();
         background-color: $white;
         cursor: pointer;
+    }
+    @media (min-width: 1510px) {
+        @include widthHeight(170px, 50px);
+        &:hover {
+            .call-us-logo {
+                background-image: url(../images/destop/dheader-mid-cu-green.png);
+            }
+            .call-us-text {
+                color: $prime;
+            }
+        }
+    }
+}
+.call-us-logo {
+    background-image: url(../images/call-us-white.png);
+    @include image();
+    @include widthHeight(20px, 20px);
+    &:hover {
+        background-image: url(../images/call-us-green.png);
+    }
+    @media (min-width: 1510px) {
+        @include widthHeight(30px, 30px);
+        @include image();
+        background-image: url(../images/destop/dheader-mid-cu-white.png);
+        margin-right: 10px;
+    }
+}
+.call-us-text {
+    display: none;
+    @media (min-width: 1510px) {
+        display: block;
+        @include widthHeight(61px, 24px);
+        @include font(700, 18px, 24px);
+        color: $white;
+        text-transform: capitalize;
     }
 }
 .menu-list {
@@ -172,6 +252,9 @@
     @include widthHeight(30px, 30px);
     &:hover {
         cursor: pointer;
+    }
+    @media (min-width: 1510px) {
+        display: none;
     }
 }
 

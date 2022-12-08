@@ -262,25 +262,137 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 627px;
+    height: 20px;
+  }
+  .menu-pages [class*=page-] {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-pages [class*=page-]::after {
+    width: 12px;
+    height: 7px;
+    content: "";
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    background-image: url(../images/destop/dheader-mid-arr-black.png);
+  }
+  .menu-pages [class*=page-]:last-child::after {
+    display: none;
+  }
+  .menu-pages [class*=page-]:hover {
+    color: #00730C;
+    cursor: pointer;
+  }
+  .menu-pages [class*=page-]:hover::after {
+    background-image: url(../images/destop/dheader-mid-arr-green.png);
+  }
+  .menu-pages [class*=page-]:hover:last-child::after {
+    display: none;
   }
 }
 
+.page-home {
+  width: 62px;
+  height: 20px;
+}
+
+.page-company {
+  width: 87px;
+  height: 20px;
+}
+
+.page-services {
+  width: 79px;
+  height: 20px;
+}
+
+.page-project {
+  width: 70px;
+  height: 20px;
+}
+
+.page-blog {
+  width: 51px;
+  height: 20px;
+}
+
+.page-contact {
+  width: 58px;
+  height: 20px;
+}
+
 .call-us {
-  background-image: url(../images/call-us-white.png);
-  background-position: center;
-  background-repeat: no-repeat;
   width: 40px;
   height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px #00730C solid;
   border-radius: 10px;
   background-color: #00730C;
 }
 .call-us:hover {
-  background-image: url(../images/call-us-green.png);
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: #FFFFFF;
   cursor: pointer;
+}
+@media (min-width: 1510px) {
+  .call-us {
+    width: 170px;
+    height: 50px;
+  }
+  .call-us:hover .call-us-logo {
+    background-image: url(../images/destop/dheader-mid-cu-green.png);
+  }
+  .call-us:hover .call-us-text {
+    color: #00730C;
+  }
+}
+
+.call-us-logo {
+  background-image: url(../images/call-us-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.call-us-logo:hover {
+  background-image: url(../images/call-us-green.png);
+}
+@media (min-width: 1510px) {
+  .call-us-logo {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/destop/dheader-mid-cu-white.png);
+    margin-right: 10px;
+  }
+}
+
+.call-us-text {
+  display: none;
+}
+@media (min-width: 1510px) {
+  .call-us-text {
+    display: block;
+    width: 61px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+  }
 }
 
 .menu-list {
@@ -292,6 +404,11 @@ body {
 }
 .menu-list:hover {
   cursor: pointer;
+}
+@media (min-width: 1510px) {
+  .menu-list {
+    display: none;
+  }
 }
 
 .header-banner {
