@@ -6,7 +6,7 @@
 .header-top {
     @include widthHeight(100%, 55px);
     background-color: $edge;
-    padding: 22px 20px 17px;
+    padding: 20px 20px 15px;
     @media (min-width: 1510px) {
         @include widthHeight(100%, 60px);
         @include flexHead(center);
@@ -261,6 +261,9 @@
 .header-banner {
     @include widthHeight(375px, 240px);
     margin-top: 38px;
+    @media (min-width: 1510px) {
+        display: none;
+    }
 }
 
 .header-bottom {
@@ -268,15 +271,42 @@
     @include widthHeight(100%, auto);
     margin-top: 1px;
     background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+    @media (min-width: 1510px) {
+        margin-top: 85px;
+        @include widthHeight(100%, 720px);
+        @include flexHead(space-between);
+        flex-direction: row;
+        padding: 46px 0px 0px;
+    }
 }
 .small-head-bot-banner {
     display: none;
+    @media (min-width: 1510px) {
+        display: block;
+        margin-top: 335px;
+        margin-bottom: 60px;
+        @include widthHeight(197px, 278px);
+        @include image();
+        background-image: url(../images/destop/dheader-bot-small-banner.png);
+    }
 }
 .header-bottom-content {
     @include widthHeight(375px, 466.17px);
     @include flexBuild(normal);
     padding-top: 47.63px;
     padding-bottom: 35px;
+    @media (min-width: 1510px) {
+        @include flexStart();
+        @include widthHeight(556px, 486px);
+        margin: 87px 0px 100px;
+        padding: 0px;
+    }
+}
+.header-bottom-cont-text {
+    @media (min-width: 1510px) {
+        @include widthHeight(556px, 278px);
+        @include flexStart();
+    }
 }
 .head-bottom-sub-head {
     @include font(700, 14px, 19px);
@@ -290,6 +320,19 @@
         @include widthHeight(23.8px, 19.89px);
         margin-right: 5px;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(242px, 20px);
+        text-transform: capitalize;
+        @include font(700, 16px, 20px);
+        margin-bottom: 20px;
+        &::before {
+            @include beforeAfter();
+            @include image();
+            @include widthHeight(24px, 20px);
+            background-image: url(../images/destop/dheader-bot-cont-logo.png);
+            margin-right: 5px;
+        }
+    }
 }
 .head-bottom-head {
     @include font(700, 28px, 38px);
@@ -298,13 +341,33 @@
     span {
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(556px, 158px);
+        @include font(800, 58px, 79px);
+        margin-bottom: 20px;
+        color: $black;
+        span {
+            color: $prime;
+        }
+    }
 }
 .head-bottom-text {
     @include font(400, 14px, 22px);
     margin-bottom: 40px;
+    @media (min-width: 1510px) {
+        @include widthHeight(556px, 60px);
+        @include font(400, 18px, 30px);
+        color: $dark-grey;
+        margin-bottom: 0px;
+    }
+}
+.head-bot-cont-buts {
+    @media (min-width: 1510px) {
+        @include flexHead(space-between);
+        @include widthHeight(382px, 50px);
+    }
 }
 .get-a-quate {
-    padding: 12px 105px;
     @include widthHeight(304px, 44px);
     background: $prime;
     border-radius: 5px;
@@ -320,6 +383,19 @@
         background: $white;
         color: $prime;
         cursor: pointer;
+    }
+    @media (min-width: 1510px) {
+        @include widthHeight(175px, 50px);
+        color: $prime;
+        background: $white;
+        position: static;
+        transform: none;
+        margin-bottom: 0px;
+        margin-right: 30px;
+        &:hover {
+            background: $prime;
+            color: $white;
+        }
     }
 }
 .see-work {
@@ -343,6 +419,9 @@
     background-image: url(../images/flower-head-left.png);
     @include image();
     @include widthHeight(83px, 133px);
+    @media (min-width: 1510px) {
+        display: none;
+    }
 }
 .two-buttons-header {
     @include flexHead(space-between);
