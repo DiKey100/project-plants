@@ -3,6 +3,10 @@
 .services, .about-us, .why-choose-us {
     @include flexBuild(center);
     padding-top: 50px;
+    @media (min-width: 1510px) {
+        @include flexBrick(space-between);
+        padding-top: 100px;
+    }
 }
 .service-head {
     @include font(700, 28px, 38px);
@@ -13,6 +17,12 @@
     span {
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(440px, 61px);
+        @include font(800, 45px, 61px);
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 .service-text {
     @include widthHeight(344px, 110px);
@@ -20,10 +30,27 @@
     text-align: center;
     color: $dark-grey;
     margin-bottom: 30px;
+    @media (min-width: 1510px) {
+        @include widthHeight(1136px, 60px);
+        @include font(400, 18px, 30px);
+        margin-bottom: 50px;
+    }
 }
 .service-8-sentences {
     @include flexBrick(space-between);
     @include widthHeight(345px, 1068px);
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 762px);
+    }
+}
+.service-sentence-line {
+    @include widthHeight(345px, 524px);
+    @include flexBrick(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 366px);
+        @include flexHead(space-between);
+        flex-direction: row;
+    }
 }
 .serv-sentence {
     @include widthHeight(345px, 116px);
@@ -32,6 +59,11 @@
     box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
     border-radius: 10px;
     @include flexHead(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(330px, 366px);
+        padding: 0px;
+        @include flexBrick(center);
+    }
 }
 .sentence-logo {
     @include widthHeight(50px, 50px);
