@@ -169,6 +169,11 @@
 }
 
 // about us section
+.about-us {
+    @media (min-width: 1510px) {
+        padding-bottom: 100px;
+    }
+}
 .about-us-content {
     @media (min-width: 1510px) {
         @include flexHead(space-between);
@@ -297,12 +302,25 @@
     text-align: center;
     border: 1px $prime solid;
     border-radius: 5px;
-    background-color: $prime;
+    background: $prime;
     color: $white;
     &:hover {
         background-color: $white;
         color: $prime;
         cursor: pointer;
+    }
+    @media (min-width: 1510px) {
+        @include widthHeight(190px, 50px);
+        @include flexHead(center);
+        background: $white;
+        color: $prime;
+        padding: 0px;
+        @include font(700, 18px, 50px);
+        &:hover {
+            background: $prime;
+            color: $white;
+            cursor: pointer;
+        }
     }
 }
 
@@ -314,35 +332,101 @@
     @include widthHeight(100%, 694px);
     color: $white;
     padding-bottom: 50px;
+    @media (min-width: 1510px) {
+        margin: 0px;
+        @include widthHeight(100%, 655px);
+        padding-bottom: 112px;
+    }
+}
+.why-choose-us-content {
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 455px);
+        @include flexHead(space-between);
+        flex-direction: row-reverse;
+    }
 }
 .wcu-photo {
     @include widthHeight(345px, 217px);
-    display: block;
-}
-.wcu-photo2 {
-    display: none;
+    @media (min-width: 1510px) {
+        img {
+            display: none;
+        }
+        @include widthHeight(672px, 426px);
+        @include image();
+        background-image: url(../images/destop/dmain-wcu-photo.png);
+    }
+    
 }
 .wcu-content {
     @include flexBrick(space-between);
     @include widthHeight(345px, 337px);
+    margin-top: 30px;
+    @media (min-width: 1510px) {
+        @include widthHeight(756px, 455px);
+        @include flexStart();
+        margin: 0px;
+    }
 }
 .wcu-content-head {
     @include widthHeight(210px, 38px);
     @include font(700, 28px, 38px);
     text-transform: capitalize;
+    @media (min-width: 1510px) {
+        @include widthHeight(337px, 61px);
+        @include font(700, 45px, 61px);
+        margin-bottom: 30px;
+    }
 }
 .wcu-content-text {
     @include widthHeight(345px, 110px);
     @include font(400, 14px, 22px);
     text-align: center;
+    @media (min-width: 1510px) {
+        @include widthHeight(656px, 120px);
+        @include font(400, 18px, 30px);
+        text-align: start;
+        margin-bottom: 50px;
+    }
 }
 .wcu-difference {
     @include flexBrick(space-between);
     @include widthHeight(345px, 64px);
+    @media (min-width: 1510px) {
+        @include widthHeight(600px, 86px);
+        @include flexStart();
+        margin-bottom: 50px;
+    }
 }
 .wcu-difference-line {
     @include flexHead(space-between);
     @include widthHeight(345px, 22px);
+    @media (min-width: 1510px) {
+        &:first-child {
+            @include widthHeight(570px, 33px);
+        }
+        &:last-child {
+            @include widthHeight(600px, 33px);
+        }
+        .wcu-dp-2m, .wcu-dp-3m, .wcu-dp-4m {
+            display: none;
+        }
+        .wcu-dp-1 {
+            @include widthHeight(242px, 33px);
+            @include flexHead(center);
+        }
+        .wcu-dp-2d {
+            @include widthHeight(210px, 33px);
+            @include flexHead(center);
+        }
+        .wcu-dp-3d {
+            @include widthHeight(217px, 33px);
+            @include flexHead(center);
+        }
+        .wcu-dp-4d {
+            @include widthHeight(240px, 33px);
+            @include flexHead(center);
+        }
+    }
 }
 .wcu-diff-pick {
     @include widthHeight(158px, 22px);
@@ -357,6 +441,23 @@
         @include image();
         background-image: url(../images/main-wcu-tick.png);
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 33px);
+        @include font(700, 24px, 33px);
+        text-align: center;
+        &::before {
+            @include beforeAfter();
+            @include widthHeight(30px, 30px);
+            @include image();
+            background-image: url(../images/destop/dmain-wcu-tick.png);
+            background-color: $white;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    }
+}
+.wcu-dp-2d, .wcu-dp-3d, .wcu-dp-4d {
+    display: none;
 }
 
 // Working process section
