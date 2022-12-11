@@ -465,11 +465,19 @@
 .working-process {
     padding-top: 50px;
     @include flexBuild(center);
+    @media (min-width: 1510px) {
+        @include flexBrick(space-between);
+        padding-top: 100px;
+    }
 }
 .wp-text {
     @include widthHeight(345px, 163px);
     @include flexBrick(space-between);
     margin-bottom: 30px;
+    @media (min-width: 1510px) {
+        @include widthHeight(1136px, 141px);
+        margin: 0px;
+    }
 }
 .wp-text-head {
     @include widthHeight(220px, 38px);
@@ -479,16 +487,32 @@
     span {
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(361px, 61px);
+        @include font(800, 45px, 61px);
+        span {
+            color: $prime;
+        }
+    }
 }
 .wp-text-basic {
     @include widthHeight(345px, 110px);
     @include font(400, 14px, 22px);
     text-align: center;
     color: $dark-grey;
+    @media (min-width: 1510px) {
+        @include widthHeight(1136px, 60px);
+        @include font(400, 18px, 30px);
+    }
 }
 .wp-4-cards {
     @include flexBrick(space-between);
     @include widthHeight(345px, 892px);
+    @media (min-width: 1510px) {
+        @include flexHead(space-between);
+        flex-direction: row;
+        @include widthHeight(1410px, 408px);
+    }
 }
 .wp-card {
     @include flexBrick(space-between);
@@ -496,30 +520,92 @@
     padding: 20px;
     box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
     border-radius: 10px;
+    @media (min-width: 1510px) {
+        @include widthHeight(330px, 408px);
+        padding: 0px;
+        @include flexBrick(center);
+        &:hover {
+            background-color: $prime;
+            box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+            .wcl-1 {
+                background-image: url(../images/destop/dmain-wp-card1-white.png);
+            }
+            .wcl-2 {
+                background-image: url(../images/destop/dmain-wp-card2-white.png);
+            }
+            .wcl-3 {
+                background-image: url(../images/destop/dmain-wp-card3-white.png);
+            }
+            .wcl-4 {
+                background-image: url(../images/destop/dmain-wp-card4-white.png);
+            }
+            .wp-card-number, .wp-card-head, .wp-card-basic {
+                color: $white;
+            }
+        }
+    }
 }
 .wp-card-logo-and-number {
     @include flexHead(space-between);
     @include widthHeight(305px, 50px);
+    @media (min-width: 1510px) {
+        @include widthHeight(270px, 80px);
+        margin-bottom: 35px;
+        .wp-card-logo {
+            img {
+                display: none;
+            }
+            @include widthHeight(70px, 70px);
+            @include image();
+        }
+        .wcl-1 {
+            background-image: url(../images/destop/dmain-wp-card1-green.png);
+        }
+        .wcl-2 {
+            background-image: url(../images/destop/dmain-wp-card2-green.png);
+        }
+        .wcl-3 {
+            background-image: url(../images/destop/dmain-wp-card3-green.png);
+        }
+        .wcl-4 {
+            background-image: url(../images/destop/dmain-wp-card4-green.png);
+        }
+    }
 }
 .wp-card-number {
     @include font(800, 45px, 50px);
     color: $grey;
     padding-right: 10px;
+    @media (min-width: 1510px) {
+        @include font(800, 78px, 80px);
+        padding: 0px;
+    }
 }
 .wp-card-text {
     @include widthHeight(305px, 98px);
     @include flexBrick(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(270px, 173px);
+    }
 }
 .wp-card-head {
     @include widthHeight(305px, 22px);
     @include font(700, 16px, 22px);
     text-transform: capitalize;
     color: $black;
+    @media (min-width: 1510px) {
+        @include widthHeight(270px, 33px);
+        @include font(700, 24px, 33px);
+    }
 }
 .wp-card-basic {
     @include widthHeight(305px, 66px);
     @include font(400, 14px, 22px);
     color: $dark-grey;
+    @media (min-width: 1510px) {
+        @include widthHeight(270px, 120px);
+        @include font(400, 18px, 30px);
+    }
 }
 
 // cta section
