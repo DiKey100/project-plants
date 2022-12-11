@@ -466,8 +466,13 @@
     padding-top: 50px;
     @include flexBuild(center);
     @media (min-width: 1510px) {
-        @include flexBrick(space-between);
+        @include flexBrick(center);
         padding-top: 100px;
+    }
+}
+.working-process-content {
+    @media (min-width: 1510px) {
+        @include flexBrick(space-between);
     }
 }
 .wp-text {
@@ -476,7 +481,7 @@
     margin-bottom: 30px;
     @media (min-width: 1510px) {
         @include widthHeight(1136px, 141px);
-        margin: 0px;
+        margin-bottom: 50px;
     }
 }
 .wp-text-head {
@@ -613,11 +618,23 @@
     @include widthHeight(100%, 224px);
     padding: 0px 15px;
     margin-top: 55px;
+    @media (min-width: 1510px) {
+        @include widthHeight(100%, 247px);
+        margin-top: 100px;
+        @include flexHead(center);
+        padding-left: 647px;
+        padding-right: 60px;
+        @include image();
+        background-image: url(../images/destop/dmain-cta-photo.png);
+    }
 }
 .cta-photo {
     background-image: url(../images/main-cta-photo.png);
     @include image();
     @include widthHeight(100%, 224px);
+    @media (min-width: 1510px) {
+        display: none;
+    }
 }
 .cta-basic {
     position: relative;
@@ -627,12 +644,24 @@
 
     @include widthHeight(272px, 124px);
     @include flexBrick(space-between);
+    @media (min-width: 1510px) {
+        position: static;
+        transform: none;
+        @include widthHeight(703px, 90px);
+        @include flexHead(space-between);
+        flex-direction: row;
+    }
 }
 .cta-text {
     @include widthHeight(272px, 54px);
     @include font(700, 20px, 27px);
     text-align: center;
     color: $white;
+    @media (min-width: 1510px) {
+        @include widthHeight(448px, 90px);
+        @include font(700, 33px, 45px);
+        text-align: start;
+    }
 }
 .cta-call-us {
     @include widthHeight(137px, 40px);
@@ -656,6 +685,28 @@
         color: $white;
         &::before {
             background-image: url(../images/call-us-white.png);
+        }
+    }
+    @media (min-width: 1510px) {
+        @include widthHeight(170px, 50px);
+        @include flexHead(center);
+        @include font(700, 18px, 50px);
+        box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+        background: $white;
+        color: $prime;
+        &::before {
+            @include widthHeight(30px, 30px);
+            @include beforeAfter();
+            @include image();
+            background-image: url(../images/destop/dmain-cu-green.png);
+            margin-right: 10px;
+        }
+        &:hover {
+            background: $prime;
+            color: $white;
+            &::before{
+                background-image: url(../images/destop/dmain-cu-white.png);
+            }
         }
     }
 }
