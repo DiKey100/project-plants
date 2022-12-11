@@ -952,17 +952,83 @@ body {
   .serv-sentence {
     width: 330px;
     height: 366px;
-    padding: 0px;
+    padding: 60px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+  }
+  .serv-sentence .sl-1 {
+    background-image: url(../images/destop/dmain-service-1-green.png);
+  }
+  .serv-sentence .sl-2 {
+    background-image: url(../images/destop/dmain-service-2-green.png);
+  }
+  .serv-sentence .sl-3 {
+    background-image: url(../images/destop/dmain-service-3-green.png);
+  }
+  .serv-sentence .sl-4 {
+    background-image: url(../images/destop/dmain-service-4-green.png);
+  }
+  .serv-sentence .sl-5 {
+    background-image: url(../images/destop/dmain-service-5-green.png);
+  }
+  .serv-sentence .sl-6 {
+    background-image: url(../images/destop/dmain-service-6-green.png);
+  }
+  .serv-sentence .sl-7 {
+    background-image: url(../images/destop/dmain-service-7-green.png);
+  }
+  .serv-sentence .sl-8 {
+    background-image: url(../images/destop/dmain-service-8-green.png);
+  }
+  .serv-sentence:hover {
+    cursor: pointer;
+    background: #00730C;
+  }
+  .serv-sentence:hover .sentence-head, .serv-sentence:hover .dsentence-text {
+    color: #FFFFFF;
+  }
+  .serv-sentence:hover .sl-1 {
+    background-image: url(../images/destop/dmain-service-1-white.png);
+  }
+  .serv-sentence:hover .sl-2 {
+    background-image: url(../images/destop/dmain-service-2-white.png);
+  }
+  .serv-sentence:hover .sl-3 {
+    background-image: url(../images/destop/dmain-service-3-white.png);
+  }
+  .serv-sentence:hover .sl-4 {
+    background-image: url(../images/destop/dmain-service-4-white.png);
+  }
+  .serv-sentence:hover .sl-5 {
+    background-image: url(../images/destop/dmain-service-5-white.png);
+  }
+  .serv-sentence:hover .sl-6 {
+    background-image: url(../images/destop/dmain-service-6-white.png);
+  }
+  .serv-sentence:hover .sl-7 {
+    background-image: url(../images/destop/dmain-service-7-white.png);
+  }
+  .serv-sentence:hover .sl-8 {
+    background-image: url(../images/destop/dmain-service-8-white.png);
   }
 }
 
 .sentence-logo {
   width: 50px;
   height: 50px;
+}
+@media (min-width: 1510px) {
+  .sentence-logo {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .sentence-logo img {
+    display: none;
+  }
 }
 
 .sentence-texts {
@@ -972,6 +1038,16 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+}
+@media (min-width: 1510px) {
+  .sentence-texts {
+    width: 245px;
+    height: 127px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .sentence-head {
@@ -984,6 +1060,17 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+@media (min-width: 1510px) {
+  .sentence-head {
+    width: 243px;
+    height: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #212529;
+  }
+}
 
 .sentence-text {
   width: 235px;
@@ -994,13 +1081,54 @@ body {
   line-height: 22px;
   color: #676767;
 }
+@media (min-width: 1510px) {
+  .sentence-text {
+    display: none;
+  }
+}
+
+.dsentence-text {
+  display: none;
+}
+@media (min-width: 1510px) {
+  .dsentence-text {
+    display: block;
+    width: 245px;
+    height: 84px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #676767;
+  }
+}
+
+@media (min-width: 1510px) {
+  .about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1410px;
+    height: 903px;
+  }
+}
 
 .au-photo {
   display: block;
 }
-
-.au-photo2 {
-  display: none;
+@media (min-width: 1510px) {
+  .au-photo {
+    width: 693px;
+    height: 903px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/destop/dheader-au-photo.png);
+  }
+  .au-photo img {
+    display: none;
+  }
 }
 
 .au-content {
@@ -1011,6 +1139,17 @@ body {
   padding-top: 30px;
   width: 345px;
   height: auto;
+}
+@media (min-width: 1510px) {
+  .au-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 690px;
+    height: 806px;
+    padding: 0px;
+  }
 }
 
 .au-content-head {
@@ -1026,6 +1165,20 @@ body {
 .au-content-head span {
   color: #00730C;
 }
+@media (min-width: 1510px) {
+  .au-content-head {
+    width: 574px;
+    height: 122px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 0px;
+  }
+  .au-content-head span {
+    color: #00730C;
+  }
+}
 
 .au-content-text {
   width: 345px;
@@ -1037,6 +1190,18 @@ body {
   color: #676767;
   margin-bottom: 40px;
 }
+@media (min-width: 1510px) {
+  .au-content-text {
+    width: 672px;
+    height: 280px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px;
+  }
+}
 
 .au-cards {
   display: flex;
@@ -1047,6 +1212,13 @@ body {
   height: 208px;
   margin-bottom: 30px;
 }
+@media (min-width: 1510px) {
+  .au-cards {
+    margin: 0px;
+    width: 690px;
+    height: 224px;
+  }
+}
 
 .au-cards-line {
   display: flex;
@@ -1055,6 +1227,13 @@ body {
   width: 344px;
   height: 94px;
   margin-bottom: 20px;
+}
+@media (min-width: 1510px) {
+  .au-cards-line {
+    width: 690px;
+    height: 97px;
+    margin-bottom: 0px;
+  }
 }
 
 .au-card {
@@ -1069,6 +1248,43 @@ body {
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 5px;
 }
+@media (min-width: 1510px) {
+  .au-card {
+    width: 330px;
+    height: 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px 30px;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  .au-card .acl-1 {
+    background-image: url(../images/destop/dmain-au-card-1.png);
+  }
+  .au-card .acl-2 {
+    background-image: url(../images/destop/dmain-au-card-2.png);
+  }
+  .au-card .acl-3 {
+    background-image: url(../images/destop/dmain-au-card-3.png);
+  }
+  .au-card .acl-4 {
+    background-image: url(../images/destop/dmain-au-card-4.png);
+  }
+}
+
+@media (min-width: 1510px) {
+  .au-card-logo {
+    width: 67px;
+    height: 67px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .au-card-logo img {
+    display: none;
+  }
+}
 
 .au-card-text {
   width: 132px;
@@ -1080,6 +1296,17 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #212529;
+}
+@media (min-width: 1510px) {
+  .au-card-text {
+    width: 173px;
+    height: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: start;
+  }
 }
 
 .discover-more {

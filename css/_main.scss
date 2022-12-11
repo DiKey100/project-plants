@@ -61,40 +61,140 @@
     @include flexHead(space-between);
     @media (min-width: 1510px) {
         @include widthHeight(330px, 366px);
-        padding: 0px;
-        @include flexBrick(center);
+        padding: 60px 0px;
+        @include flexBrick(space-between);
+        .sl-1 {
+            background-image: url(../images/destop/dmain-service-1-green.png);
+        }
+        .sl-2 {
+            background-image: url(../images/destop/dmain-service-2-green.png);
+        }
+        .sl-3 {
+            background-image: url(../images/destop/dmain-service-3-green.png);
+        }
+        .sl-4 {
+            background-image: url(../images/destop/dmain-service-4-green.png);
+        }
+        .sl-5 {
+            background-image: url(../images/destop/dmain-service-5-green.png);
+        }
+        .sl-6 {
+            background-image: url(../images/destop/dmain-service-6-green.png);
+        }
+        .sl-7 {
+            background-image: url(../images/destop/dmain-service-7-green.png);
+        }
+        .sl-8 {
+            background-image: url(../images/destop/dmain-service-8-green.png);
+        }
+        &:hover {
+            cursor: pointer;
+            background: $prime;
+            .sentence-head, .dsentence-text {
+                color: $white;
+            }
+            .sl-1 {
+                background-image: url(../images/destop/dmain-service-1-white.png);
+            }
+            .sl-2 {
+                background-image: url(../images/destop/dmain-service-2-white.png);
+            }
+            .sl-3 {
+                background-image: url(../images/destop/dmain-service-3-white.png);
+            }
+            .sl-4 {
+                background-image: url(../images/destop/dmain-service-4-white.png);
+            }
+            .sl-5 {
+                background-image: url(../images/destop/dmain-service-5-white.png);
+            }
+            .sl-6 {
+                background-image: url(../images/destop/dmain-service-6-white.png);
+            }
+            .sl-7 {
+                background-image: url(../images/destop/dmain-service-7-white.png);
+            }
+            .sl-8 {
+                background-image: url(../images/destop/dmain-service-8-white.png);
+            }
+        }
     }
 }
 .sentence-logo {
     @include widthHeight(50px, 50px);
+    @media (min-width: 1510px) {
+        img {
+            display: none;
+        }
+        @include widthHeight(70px, 70px);
+        @include image();
+    }
 }
 .sentence-texts {
     @include widthHeight(235px, 76px);
     @include flexStart();
+    @media (min-width: 1510px) {
+        @include widthHeight(245px, 127px);
+        @include flexBrick(space-between);
+    }
 }
 .sentence-head {
     @include widthHeight(auto, 22px);
     @include font(700, 16px, 22px);
     text-align: center;
-    text-transform: capitalize; 
+    text-transform: capitalize;
+    @media (min-width: 1510px) {
+        @include widthHeight(243px, 33px);
+        @include font(700, 24px, 33px);
+        color: $black;
+    }
 }
 .sentence-text {
     @include widthHeight(235px, 44px);
     @include font(400, 14px, 22px);
     color: $dark-grey;
+    @media (min-width: 1510px) {
+        display: none;
+    }
+}
+.dsentence-text {
+    display: none;
+    @media (min-width: 1510px) {
+        display: block;
+        @include widthHeight(245px, 84px);
+        @include fontP(400, 16px, 28px);
+        text-align: center;
+        color: $dark-grey;
+    }
 }
 
 // about us section
+.about-us-content {
+    @media (min-width: 1510px) {
+        @include flexHead(space-between);
+        @include widthHeight(1410px, 903px);
+    }
+}
 .au-photo {
     display: block;
-}
-.au-photo2 {
-    display: none;
+    @media (min-width: 1510px) {
+        img {
+            display: none;
+        }
+        @include widthHeight(693px, 903px);
+        @include image();
+        background-image: url(../images/destop/dheader-au-photo.png);
+    }
 }
 .au-content {
     @include flexBrick(center);
     padding-top: 30px;
     @include widthHeight(345px, auto);
+    @media (min-width: 1510px) {
+        @include flexStart();
+        @include widthHeight(690px, 806px);
+        padding: 0px;
+    }
 }
 .au-content-head {
     @include widthHeight(345px, 76px);
@@ -104,22 +204,43 @@
     span {
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(574px, 122px);
+        @include font(800, 45px, 61px);
+        margin-bottom: 0px;
+        span {
+            color: $prime;
+        }
+    }
 }
 .au-content-text {
     @include widthHeight(345px, 330px);
     @include font(400, 14px, 22px);
     color: $dark-grey;
     margin-bottom: 40px;
+    @media (min-width: 1510px) {
+        @include widthHeight(672px, 280px);
+        @include fontP(400, 16px, 28px);
+        margin: 0px;
+    }
 }
 .au-cards {
     @include flexBrick(space-between);
     @include widthHeight(344px, 208px);
     margin-bottom: 30px;
+    @media (min-width: 1510px) {
+        margin: 0px;
+        @include widthHeight(690px, 224px);
+    }
 }
 .au-cards-line {
     @include flexHead(space-between);
     @include widthHeight(344px, 94px);
     margin-bottom: 20px;
+    @media (min-width: 1510px) {
+        @include widthHeight(690px, 97px);
+        margin-bottom: 0px;
+    }
 }
 .au-card {
     @include flexBrick(space-between);
@@ -128,6 +249,35 @@
     background: $white;
     box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
     border-radius: 5px;
+    @media (min-width: 1510px) {
+        @include widthHeight(330px, 97px);
+        @include flexHead(space-between);
+        flex-direction: row;
+        padding: 15px 30px;
+        box-shadow: none;
+        border-radius: 0px;
+        .acl-1 {
+            background-image: url(../images/destop/dmain-au-card-1.png);
+        }
+        .acl-2 {
+            background-image: url(../images/destop/dmain-au-card-2.png);
+        }
+        .acl-3 {
+            background-image: url(../images/destop/dmain-au-card-3.png);
+        }
+        .acl-4 {
+            background-image: url(../images/destop/dmain-au-card-4.png);
+        }
+    }
+}
+.au-card-logo {
+    @media (min-width: 1510px) {
+        img {
+            display: none;
+        }
+        @include widthHeight(67px, 67px);
+        @include image();
+    }
 }
 .au-card-text {
     @include widthHeight(132px, 19px);
@@ -135,6 +285,11 @@
     text-align: center;
     text-transform: capitalize;
     color: $black;
+    @media (min-width: 1510px) {
+        @include widthHeight(173px, 33px);
+        @include font(700, 24px, 33px);
+        text-align: start;
+    }
 }
 .discover-more {
     @include widthHeight(167px, 40px);
