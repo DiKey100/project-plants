@@ -236,10 +236,40 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 585px;
+    @media (min-width: 1510px) {
+        @include widthHeight(100%, 642px);
+        @include flexBrick(center);
+        padding: 100px 0px 0px;
+        margin-top: 100px;
+        background-image: url(../images/destop/dmain-cs-bc.png);
+        background-size: 100% 585px;
+    }
+}
+.client-saying-content {
+    @include flexBrick(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 542px);
+    }
 }
 .cs-text {
     @include widthHeight(345px, 163px);
     @include flexBrick(space-between);
+    margin-bottom: 40px;
+    @media (min-width: 1510px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        @include widthHeight(1410px, 150px);
+    }
+}
+.cs-text-content {
+    @include widthHeight(345px, 163px);
+    @include flexBrick(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(956px, 150px);
+        @include flexStart();
+    }
 }
 .cs-text-head {
     @include widthHeight(270px, 38px);
@@ -249,21 +279,55 @@
     span {
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(442px, 61px);
+        @include font(800, 45px, 61px);
+        span {
+            color: $prime;
+        }
+    }
 }
 .cs-text-basic {
     @include widthHeight(345px, 110px);
     @include font(400, 14px, 22px);
     text-align: center;
     color: $dark-grey;
+    @media (min-width: 1510px) {
+        @include widthHeight(956px, 60px);
+        @include font(400, 18px, 30px);
+        text-align: start;
+    }
 }
 .cs-arrows {
     display: none;
+    @media (min-width: 1510px) {
+        @include widthHeight(130px, 50px);
+        @include flexHead(space-between);
+        [class*="cs-arrow-"] {
+            @include widthHeight(49px, 49px);
+            border: 1px solid $prime;
+            border-radius: 5px;
+            @include flexHead(center);
+        }
+        .cs-arrow-left {
+            background: none;
+        }
+        .cs-arrow-right {
+            background: $prime;
+        }
+    }
 }
 .cs-review {
     @include widthHeight(345px, 431px);
     padding: 20px;
     background: $white;
     box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 340px);
+        padding: 0px;
+        box-shadow: none;
+        @include flexHead(space-between);
+    }
 }
 .cs-rev-card {
     @include flexStart();
@@ -271,13 +335,15 @@
     &:last-child {
         display: none;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(690px, 340px);
+        @include flexHead(space-between);
+        flex-direction: row;
+        padding: 0px 25px;
+    }
 }
 .cs-rev-photo {
-    display: block;
     @include widthHeight(135px, 183px);
-}
-.cs-rev-photo2 {
-    display: none;
 }
 .cs-rev-text {
     @include widthHeight(305px, 123px);
