@@ -2007,10 +2007,30 @@ body {
   padding-right: 15px;
   padding-top: 50px;
 }
+@media (min-width: 1510px) {
+  .your-team, .faq, .main-blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px 0px;
+  }
+}
 
 .your-team {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 1510px) {
+  .your-team-content {
+    width: 1410px;
+    height: 610px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .yt-texts {
@@ -2020,6 +2040,36 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+@media (min-width: 1510px) {
+  .yt-texts {
+    width: 1410px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .yt-texts button {
+    margin-top: 92px;
+  }
+}
+
+.yt-text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1510px) {
+  .yt-text-content {
+    width: 956px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .yt-head {
@@ -2037,6 +2087,20 @@ body {
 .yt-head span {
   color: #00730C;
 }
+@media (min-width: 1510px) {
+  .yt-head {
+    width: 371px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 60px;
+    color: black;
+  }
+  .yt-head span {
+    color: #00730C;
+  }
+}
 
 .yt-basic {
   width: 345px;
@@ -2049,6 +2113,18 @@ body {
   color: #676767;
   margin-bottom: 30px;
 }
+@media (min-width: 1510px) {
+  .yt-basic {
+    width: 956px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0px;
+    text-align: start;
+  }
+}
 
 .yt-slider {
   display: flex;
@@ -2056,6 +2132,29 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 40px;
+}
+@media (min-width: 1510px) {
+  .yt-slider {
+    width: 1410px;
+    height: 408px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px;
+  }
+  .yt-slider .ytc-1 {
+    background-image: url(../images/destop/dmain-ytc-photo1.png);
+  }
+  .yt-slider .ytc-2 {
+    background-image: url(../images/destop/dmain-ytc-photo2.png);
+  }
+  .yt-slider .ytc-3 {
+    background-image: url(../images/destop/dmain-ytc-photo3.png);
+  }
+  .yt-slider .ytc-4 {
+    background-image: url(../images/destop/dmain-ytc-photo4.png);
+  }
 }
 
 .yt-card {
@@ -2070,13 +2169,109 @@ body {
 .yt-card:first-child {
   display: block;
 }
+@media (min-width: 1510px) {
+  .yt-card {
+    width: 330px;
+    height: 408px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .yt-card:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+  .yt-card:hover .yt-card-photo {
+    width: 330px;
+    height: 408px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+  }
+  .yt-card:hover .yt-card-photo img {
+    display: none;
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-text {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    width: 140px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-text .ytcpt-name {
+    width: 140px;
+    height: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-text .ytcpt-post {
+    width: 115px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-network [class*=ytcpn-] {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-network [class*=ytcpn-]:hover {
+    cursor: pointer;
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-network .ytcpn-1 {
+    background-image: url(../images/destop/dmain-ytcpn-1.png);
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-network .ytcpn-2 {
+    background-image: url(../images/destop/dmain-ytcpn-2.png);
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-network .ytcpn-3 {
+    background-image: url(../images/destop/dmain-ytcpn-3.png);
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-network .ytcpn-4 {
+    background-image: url(../images/destop/dmain-ytcpn-4.png);
+  }
+  .yt-card:hover .yt-card-photo .yt-card-ph-network .ytcpn-5 {
+    background-image: url(../images/destop/dmain-ytcpn-5.png);
+  }
+  .yt-card:hover .yt-card-text {
+    display: none;
+  }
+}
 
 .yt-card-photo {
   display: block;
 }
-
-.yt-card-photo2 {
+.yt-card-photo .yt-card-ph-text, .yt-card-photo .yt-card-ph-network {
   display: none;
+}
+@media (min-width: 1510px) {
+  .yt-card-photo {
+    display: none;
+  }
 }
 
 .yt-card-text {
@@ -2095,6 +2290,16 @@ body {
   padding-top: 7px;
   padding-bottom: 7px;
 }
+@media (min-width: 1510px) {
+  .yt-card-text {
+    width: 330px;
+    height: 90px;
+    border-radius: 10px;
+    position: static;
+    padding: 13px 0px;
+    margin: 0px;
+  }
+}
 
 .yt-card-name {
   font-style: normal;
@@ -2104,6 +2309,16 @@ body {
   width: 105px;
   height: 25px;
   text-transform: capitalize;
+}
+@media (min-width: 1510px) {
+  .yt-card-name {
+    width: 139px;
+    height: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 .yt-card-post {
@@ -2115,6 +2330,16 @@ body {
   height: 22px;
   text-transform: capitalize;
 }
+@media (min-width: 1510px) {
+  .yt-card-post {
+    width: 115px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 
 .yt-slider-lines {
   width: 178px;
@@ -2123,6 +2348,11 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
+}
+@media (min-width: 1510px) {
+  .yt-slider-lines {
+    display: none;
+  }
 }
 
 .yt-slider-small-line {

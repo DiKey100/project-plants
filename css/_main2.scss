@@ -1,15 +1,40 @@
 .your-team, .faq, .main-blog {
     @include flexBuild(center);
     padding-top: 50px;
+    @media (min-width: 1510px) {
+        @include flexBrick(space-between);
+        padding: 100px 0px 0px;
+    }
 }
 
 // your team section
 .your-team {
     @include widthHeight(100%, auto);
 }
+.your-team-content {
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 610px);
+        @include flexBrick(space-between);
+    }
+}
 .yt-texts {
     @include widthHeight(345px, 233px);
     @include flexBrick(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 150px);
+        @include flexHead(space-between);
+        flex-direction: row;
+        button {
+            margin-top: 92px;
+        }
+    }
+}
+.yt-text-content {
+    @include flexBrick(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(956px, 150px);
+        @include flexStart();
+    }
 }
 .yt-head {
     @include widthHeight(225px, 38px);
@@ -21,6 +46,14 @@
     span {
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(371px, 60px);
+        @include font(800, 45px, 60px);
+        color: black;
+        span {
+            color: $prime;
+        }
+    }
 }
 .yt-basic {
     @include widthHeight(345px, 110px);
@@ -28,10 +61,34 @@
     text-align: center;
     color: $dark-grey;
     margin-bottom: 30px;
+    @media (min-width: 1510px) {
+        @include widthHeight(956px, 60px);
+        @include font(400, 18px, 30px);
+        margin: 0px;
+        text-align: start;
+    }
 }
 .yt-slider {
     @include flexBrick(space-between);
     margin-top: 40px;
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 408px);
+        @include flexHead(space-between);
+        flex-direction: row;
+        margin: 0px;
+        .ytc-1 {
+            background-image: url(../images/destop/dmain-ytc-photo1.png);
+        }
+        .ytc-2 {
+            background-image: url(../images/destop/dmain-ytc-photo2.png);
+        }
+        .ytc-3 {
+            background-image: url(../images/destop/dmain-ytc-photo3.png);
+        }
+        .ytc-4 {
+            background-image: url(../images/destop/dmain-ytc-photo4.png);
+        }
+    }
 }
 .yt-card {
     @include widthHeight(345px, 343px);
@@ -40,12 +97,78 @@
     &:first-child {
         display: block;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(330px, 408px);
+        @include flexBrick(flex-end);
+        @include image();
+        &:first-child {
+            @include flexBrick(flex-end);
+        }
+        &:hover {
+            .yt-card-photo {
+                @include widthHeight(330px, 408px);
+                @include flexBrick(center);
+                border-radius: 10px;
+                background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+                img {
+                    display: none;
+                }
+                .yt-card-ph-text {
+                    color: $white;
+                    text-transform: capitalize;
+                    @include widthHeight(140px, 64px);
+                    @include flexBrick(space-between);
+                    margin-bottom: 20px;
+                    .ytcpt-name {
+                        @include widthHeight(140px, 33px);
+                        @include font(700, 24px, 33px);
+                    }
+                    .ytcpt-post {
+                        @include widthHeight(115px, 30px);
+                        @include font(400, 18px, 30px);
+                    }
+                }
+                .yt-card-ph-network {
+                    @include flexHead(space-between);
+                    @include widthHeight (250px, 30px);
+                    [class*="ytcpn-"] {
+                        @include widthHeight(30px, 30px);
+                        @include image();
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                    .ytcpn-1 {
+                        background-image: url(../images/destop/dmain-ytcpn-1.png);
+                    }
+                    .ytcpn-2 {
+                        background-image: url(../images/destop/dmain-ytcpn-2.png);
+                    }
+                    .ytcpn-3 {
+                        background-image: url(../images/destop/dmain-ytcpn-3.png);
+                    }
+                    .ytcpn-4 {
+                        background-image: url(../images/destop/dmain-ytcpn-4.png);
+                    }
+                    .ytcpn-5 {
+                        background-image: url(../images/destop/dmain-ytcpn-5.png);
+                    }
+                }
+            }
+            .yt-card-text {
+                display: none;
+            }
+        }
+    }
 }
 .yt-card-photo {
     display: block;
-}
-.yt-card-photo2 {
-    display: none;
+    .yt-card-ph-text, .yt-card-ph-network {
+        display: none;
+    }
+    @media (min-width: 1510px) {
+        display: none;
+    }
 }
 .yt-card-text {
     @include widthHeight(345px, 62px);
@@ -58,21 +181,39 @@
     top: -108px;
     padding-top: 7px;
     padding-bottom: 7px;
+    @media (min-width: 1510px) {
+        @include widthHeight(330px, 90px);
+        border-radius: 10px;
+        position: static;
+        padding: 13px 0px;
+        margin: 0px;
+    }
 }
 .yt-card-name {
     @include font(700, 18px, 25px);
     @include widthHeight(105px, 25px);
     text-transform: capitalize;
+    @media (min-width: 1510px) {
+        @include widthHeight(139px, 33px);
+        @include font(700, 24px, 33px);
+    }
 }
 .yt-card-post {
     @include font(400, 14px, 22px);
     @include widthHeight(90px, 22px);
     text-transform: capitalize;
+    @media (min-width: 1510px) {
+        @include widthHeight(115px, 30px);
+        @include font(400, 18px, 30px);
+    }
 }
 .yt-slider-lines {
     @include widthHeight(178px, 6px);
     @include flexHead(space-between);
     margin-top: 30px;
+    @media (min-width: 1510px) {
+        display: none;
+    }
 }
 .yt-slider-small-line {
     @include widthHeight(20px, 6px);
