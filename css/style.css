@@ -2542,6 +2542,7 @@ body {
     height: 340px;
     padding: 0px;
     box-shadow: none;
+    background: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2566,14 +2567,49 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #FFFFFF;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
     flex-direction: row;
     padding: 0px 25px;
+  }
+  .cs-rev-card:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cs-rev-card .csr-ph1 {
+    background-image: url(../images/destop/dmain-csr-p1.png);
+  }
+  .cs-rev-card .csr-ph2 {
+    background-image: url(../images/destop/dmain-csr-p2.png);
   }
 }
 
 .cs-rev-photo {
   width: 135px;
   height: 183px;
+}
+@media (min-width: 1510px) {
+  .cs-rev-photo {
+    width: 193px;
+    height: 276px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .cs-rev-photo img {
+    display: none;
+  }
+}
+
+@media (min-width: 1510px) {
+  .cs-rev-content {
+    width: 415px;
+    height: 264px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .cs-rev-text {
@@ -2590,6 +2626,19 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+@media (min-width: 1510px) {
+  .cs-rev-text {
+    width: 409px;
+    height: 174px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0px;
+    padding: 24px 0px 0px 4px;
+    background-image: url(../images/destop/dmain-review-qoutes.png);
+  }
+}
 
 .cs-rev-info {
   width: 305px;
@@ -2597,6 +2646,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1510px) {
+  .cs-rev-info {
+    width: 415px;
+    height: 63px;
+  }
 }
 
 .cs-rev-info-text {
@@ -2606,6 +2661,12 @@ body {
   flex-direction: column;
   width: 81px;
   height: 40px;
+}
+@media (min-width: 1510px) {
+  .cs-rev-info-text {
+    width: 122px;
+    height: 63px;
+  }
 }
 
 .cs-rev-info-name {
@@ -2618,6 +2679,16 @@ body {
   text-transform: capitalize;
   color: #212529;
 }
+@media (min-width: 1510px) {
+  .cs-rev-info-name {
+    width: 122px;
+    height: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
 
 .cs-rev-info-post {
   width: 48px;
@@ -2627,6 +2698,31 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #676767;
+}
+@media (min-width: 1510px) {
+  .cs-rev-info-post {
+    width: 64px;
+    height: 25px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 1510px) {
+  .cs-rev-info-star {
+    width: 124px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/destop/dmain-rev-star.png);
+  }
+  .cs-rev-info-star img {
+    display: none;
+  }
 }
 
 .faq {
