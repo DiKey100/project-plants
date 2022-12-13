@@ -592,9 +592,23 @@
 }
 
 // main blog section
+.main-blog {
+    @media (min-width: 1510px) {
+        @include widthHeight(100%, 1108px);
+    }
+}
+.main-blog-content {
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 1008px);
+        @include flexBrick(space-between);
+    }
+}
 .mb-text {
     @include flexBrick(space-between);
     @include widthHeight(345px, auto);
+    @media (min-width: 1510px) {
+        @include widthHeight(1136px, 141px);
+    }
 }
 .mb-text-head {
     @include widthHeight(297px, 38px);
@@ -605,6 +619,11 @@
     span {
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 61px);
+        @include font(800, 45px, 61px);
+        margin: 0px;
+    }
 }
 .mb-text-basic {
     @include widthHeight(345px, 110px);
@@ -612,21 +631,54 @@
     text-align: center;
     color: $dark-grey;
     margin-bottom: 40px;
+    @media (min-width: 1510px) {
+        @include widthHeight(1136px, 60px);
+        @include font(400, 18px, 30px);
+        margin: 0px;
+    }
+}
+.mb-cards {
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 549px);
+        @include flexHead(space-between);
+    }
 }
 .mb-card {
     @include widthHeight(345px, 408px);
     @include flexStart();
     padding: 30px 20px;
-    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-    background-image: url(../images/main-blog-back-image.png);
-    background-repeat: no-repeat;
-    background-position: 225px 0px;
     &:first-child {
         display: none;
     }
     &:last-child {
         display: none;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(450px, 549px);
+        padding: 0px;
+        border-radius: 5px;
+        &:first-child {
+            @include flexStart();
+            @include image();
+            background-image: url(../images/destop/dmain-mbp-1.png);
+        }
+        &:last-child {
+            @include flexStart();
+            @include image();
+            background-image: url(../images/destop/dmain-mbp-3.png);
+        }
+    }
+}
+.mbc-1 {
+    @media (min-width: 1510px) {
+        
+    }
+}
+.mbc-2 {
+    background-image: url(../images/main-blog-back-image.png);
+    background-repeat: no-repeat;
+    background-position: 225px 0px;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
 }
 .mb-card-tag {
     @include widthHeight(122px, 30px);
