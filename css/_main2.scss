@@ -435,11 +435,32 @@
 // faq section
 .faq {
     @include widthHeight(100%, auto);
+    @media (min-width: 1510px) {
+        @include widthHeight(100%, 837px);
+    }
+}
+.faq-section {
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 737px);
+        @include flexHead(space-between);
+        padding-right: 12px;
+    }
+}
+.faq-content {
+    @media (min-width: 1510px) {
+        @include widthHeight(828px, 737px);
+        @include flexStart();
+    }
 }
 .mcon-text {
     @include flexBrick(space-between);
     @include widthHeight(345px, 201px);
     margin-bottom: 42px;
+    @media (min-width: 1510px) {
+        @include widthHeight(828px, 181px);
+        @include flexStart();
+        margin: 0px;
+    }
 }
 .mcon-text-head {
     @include widthHeight(220px, 76px);
@@ -450,16 +471,31 @@
     span {
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 61px);
+        @include font(800, 45px, 61px);
+        span {
+            color: $prime;
+        }
+    }
 }
 .mcon-text-basic {
     @include widthHeight(345px, 110px);
     @include font(400, 14px, 22px);
     text-align: center;
     color: $dark-grey;
+    @media (min-width: 1510px) {
+        @include widthHeight(828px, 90px);
+        @include font(400, 18px, 30px);
+        text-align: start;
+    }
 }
 .mcon-questions-answers {
     @include flexBrick(space-between);
     @include widthHeight(345px, 562px);
+    @media (min-width: 1510px) {
+        @include widthHeight(810px, 514px);
+    }
 }
 .mcon-question {
     @include flexHead(space-between);
@@ -477,16 +513,60 @@
     &:last-child {
         margin-bottom: 0px;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight (810px, 59px);
+        padding: 13px 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        &:first-child {
+            margin-bottom: 20px;
+            .dfaq-q-text {
+                color: $white;
+            }
+        }
+        &:last-child {
+            display: none;
+        }
+        &:nth-child(5) {
+            margin-bottom: 0px;
+        }
+        .mcon-question-minus {
+            background-image: url(../images/destop/dmain-faq-cross.png);
+        }
+        .mcon-question-plus {
+            background-image: url(../images/destop/dmain-faq-plus.png);
+        }
+    }
 }
 .mcon-question-text {
     @include widthHeight(285px, 19px);
     @include font(600, 14px, 19px);
     color: $black;
+    @media (min-width: 1510px) {
+        display: none;
+    }
+}
+.dfaq-q-text {
+    display: none;
+    @media (min-width: 1510px) {
+        display: block;
+        color: $black;
+        @include widthHeight(auto, 33px);
+        @include font(700, 24px, 33px);
+        text-transform: capitalize;
+    }
 }
 .mcon-question-minus, .mcon-question-plus {
     @include widthHeight(20px, 20px);
     &:hover {
         cursor: pointer;
+    }
+    @media (min-width: 1510px) {
+        img {
+            display: none;
+        }
+        @include widthHeight(28px, 28px);
+        @include image();
     }
 }
 .mcon-answer {
@@ -494,9 +574,21 @@
     @include font(400, 14px, 22px);
     color: $dark-grey;
     margin-bottom: 20px;
+    @media (min-width: 1510px) {
+        @include widthHeight(752px, 168px);
+        @include fontP(400, 16px, 28px);
+        margin-bottom: 30px;
+    }
 }
 .faq-photo {
     display: none;
+    @media (min-width: 1510px) {
+        margin-top: 52px;
+        display: block;
+        @include widthHeight(507px, 679px);
+        @include image();
+        background-image: url(../images/destop/dmain-faq-photo.png);
+    }
 }
 
 // main blog section
