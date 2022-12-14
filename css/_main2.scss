@@ -608,6 +608,7 @@
     @include widthHeight(345px, auto);
     @media (min-width: 1510px) {
         @include widthHeight(1136px, 141px);
+        margin-bottom: 50px;
     }
 }
 .mb-text-head {
@@ -641,6 +642,7 @@
     @media (min-width: 1510px) {
         @include widthHeight(1410px, 549px);
         @include flexHead(space-between);
+        margin-bottom: 60px;
     }
 }
 .mb-card {
@@ -656,7 +658,7 @@
     @media (min-width: 1510px) {
         @include widthHeight(450px, 549px);
         padding: 0px;
-        border-radius: 5px;
+        border-radius: 10px;
         &:first-child {
             @include flexStart();
             @include image();
@@ -669,16 +671,27 @@
         }
     }
 }
-.mbc-1 {
-    @media (min-width: 1510px) {
-        
-    }
-}
 .mbc-2 {
     background-image: url(../images/main-blog-back-image.png);
     background-repeat: no-repeat;
     background-position: 225px 0px;
     box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    @media (min-width: 1510px) {
+        background-image: url(../images/destop/dmain-mbp-2.png);
+        background-position: 236px 0px;
+        @include flexStart();
+    }
+}
+.mbc-tag1 {
+    @media (min-width: 1510px) {
+        @include widthHeight(139px, 35px);
+        @include flexHead(center);
+        @include font(600, 18px, 35px);
+        background: #D9F1E0;
+        color: $prime;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        margin: 100px 0px 75px 30px;
+    }
 }
 .mb-card-tag {
     @include widthHeight(122px, 30px);
@@ -688,11 +701,35 @@
     text-align: center;
     color: $prime;
     margin-bottom: 40px;
+    @media (min-width: 1510px) {
+        @include widthHeight(123px, 35px);
+        @include font(600, 18px, 35px);
+        margin: 100px 0px 0px 30px;
+    }
+}
+.mbc-text {
+    @media (min-width: 1510px) {
+        @include widthHeight(388px, 186px);
+        @include flexStart();
+        margin-left: 30px;
+    }
 }
 .mb-card-text {
     @include widthHeight(305px, 213px);
     @include flexStart();
     margin-bottom: 30px;
+    @media (min-width: 1510px) {
+       @include widthHeight(388px, 276px);
+       margin: 30px 0px 0px 30px;
+    }
+}
+.mbct-head {
+    @media (min-width: 1510px) {
+        @include widthHeight(362px, 66px);
+        @include font(700, 24px, 33px);
+        text-transform: capitalize;
+        color: $white;
+    }
 }
 .mb-card-text-head {
     @include widthHeight(277px, 44px);
@@ -700,25 +737,116 @@
     text-transform: capitalize;
     color: $prime;
     margin-bottom: 15px;
+    @media (min-width: 1510px) {
+        @include widthHeight(362px, 66px);
+        @include font(700, 24px, 33px);
+        margin: 0px;
+    }
+}
+.mbct-basic {
+    @media (min-width: 1510px) {
+        @include widthHeight(388px, 90px);
+        @include font(400, 18px, 30px);
+        color: $white;
+    }
 }
 .mb-card-text-basic {
     @include widthHeight(305px, 154px);
     @include font(400, 14px, 22px);
     color: $dark-grey;
+    @media (min-width: 1510px) {
+        display: none;
+    }
+}
+.mbctb-desk {
+    display: none;
+    @media (min-width: 1510px) {
+        display: block;
+        @include widthHeight(388px, 180px);
+        @include font(400, 18px, 30px);
+        color: $dark-grey;
+    }
+}
+.mbc-separator {
+    @media (min-width: 1510px) {
+        @include widthHeight(450px, 0.5px);
+        background: $white;
+        margin: 70px 0px 30px;
+    }
 }
 .mb-card-separator {
     @include widthHeight(305px, 1px);
     background: $grey;
     margin-bottom: 10px;
+    @media (min-width: 1510px) {
+        @include widthHeight(450px, 0.5px);
+        background: $grey;
+        margin: 25px 0px 30px;
+    }
+}
+.mbc-info {
+    @media (min-width: 1510px) {
+        @include widthHeight(363px, 24px);
+        @include flexHead(space-between);
+        margin: 0px 43.5px 28.5px 43.5px;
+    }
 }
 .mb-card-info {
     @include flexHead(space-between);
     @include widthHeight(305px, 24px);
+    @media (min-width: 1510px) {
+        align-items: flex-start;
+        @include widthHeight(363px, 24px);
+        margin: 0px 43.5px 28.5px 43.5px;
+    }
+}
+.mbci-data {
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 24px);
+        @include fontP(500, 16px, 24px);
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: $white;
+    }
 }
 .mb-card-info-data {
     @include widthHeight(81px, 24px);
     @include font(700, 14px, 19px);
     color: $dark-grey;
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 24px);
+        @include fontP(500, 16px, 24px);
+        text-decoration-line: underline;
+        text-transform: uppercase;
+    }
+}
+.mbci-profile {
+    @media (min-width: 1510px) {
+        @include widthHeight(85px, 24px);
+        @include flexBrick(space-between);
+    }
+}
+.mbcip-logo-text {
+    @media (min-width: 1510px) {
+        @include widthHeight(85px, 20px);
+        @include flexHead(space-between);
+        .mbcip-logo {
+            @include widthHeight(20px, 20px);
+            @include image();
+            background-image: url(../images/destop/dmain-mbc-profile.png);
+        }
+        .mbcip-text {
+            @include widthHeight(auto, 17px);
+            @include font(400, 18px, 20px);
+            color: $white;
+        }
+    }
+}
+.mbcip-line {
+    @media (min-width: 1510px) {
+        @include widthHeight(85px, 1px);
+        background: $white;
+    }
 }
 .mb-card-info-profile {
     @include widthHeight(85px, 20px);
@@ -732,20 +860,62 @@
         @include image();
         margin-right: 10px;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(85px, 20px);
+        @include font(400, 18px, 20px);
+        @include flexHead(space-between);
+        &::before {
+            @include beforeAfter();
+            @include widthHeight(20px, 20px);
+            @include image();
+            background-image: url(../images/destop/dmain-mbc-profile-green.png);
+        }
+    }
 }
 .mb-slider {
     display: none;
+    @media (min-width: 1510px) {
+        @include widthHeight(290px, 8px);
+        @include flexHead(space-between);
+        .mbslide {
+            @include widthHeight(50px, 7px);
+            background: #FBEEE7;
+            &:nth-child(3) {
+                background: $prime;
+            }
+        }
+    }
 }
 .company-logos {
     @include widthHeight(315px, 70px);
     @include flexHead(space-between);
     margin-top: 50px;
-    // img {
-    //     mix-blend-mode: luminosity;
-    // }
+    @media (min-width: 1510px) {
+        @include widthHeight(1618px, 100px);
+        margin-top: 100px;
+        [class*="cl-"] {
+            @include image();
+            mix-blend-mode: normal;
+        }
+        .cl-1, .cl-4 {
+            background-image: url(../images/destop/dmain-cl-1.png);
+            @include widthHeight(202px, 100px);
+        }
+        .cl-2, .cl-5 {
+            background-image: url(../images/destop/dmain-cl-2.png);
+            @include widthHeight(160px, 100px);
+        }
+        .cl-3, .cl-6 {
+            background-image: url(../images/destop/dmain-cl-3.png);
+            @include widthHeight(197px, 100px);
+        }
+    }
 }
 .cl-1, .cl-2, .cl-5, .cl-6 {
     display: none;
+    @media (min-width: 1510px) {
+        display: block;
+    }
 }
 .cl-3 {
     background-image: url(../images/footer-company-1.png);
