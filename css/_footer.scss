@@ -3,6 +3,10 @@
     margin-top: 140px;
     background: $edge;
     color: $white;
+    @media (min-width: 1510px) {
+        padding: 0px;
+        margin-top: 170px;
+    }
 }
 .link-for-button {
     @include widthHeight(320px, 179px);
@@ -13,6 +17,14 @@
 
     position: relative;
     top: -90px;
+    @media (min-width: 1510px) {
+        @include widthHeight(1410px, 125px);
+        @include flexHead(space-between);
+        flex-direction: row;
+        border-radius: 10px;
+        padding: 0px 100px;
+        top: -70px;
+    }
 }
 .footer-button-text {
     @include font(700, 20px, 27px);
@@ -21,6 +33,10 @@
     color: $black;
     span {
         color: $prime;
+    }
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 61px);
+        @include font(700, 45px, 61px);
     }
 }
 .small-get-a-quate {
@@ -36,11 +52,35 @@
         background: $white;
         color: $prime;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(175px, 50px);
+        @include flexHead(center);
+        @include font(700, 18px, 50px);
+        background: $white;
+        color: $prime;
+        &:hover {
+            background: $prime;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer-middle-block {
+    @media (min-width: 1510px) {
+        @include flexHead(space-between);
+        @include widthHeight(1410px, 354px);
+        margin-top: 45px;
+    }
 }
 .footer-subscribe {
     margin-top: -40px;
     @include flexStart();
     @include widthHeight(344px, auto);
+    @media (min-width: 1510px) {
+        margin: 0px;
+        @include widthHeight(498px, 354px);
+    }
 }
 .footer-sub-basic {
     margin-bottom: 15px;
@@ -49,17 +89,39 @@
         @include widthHeight(344px, 30px);
         @include flexHead(space-between);
     }
+    @media (min-width: 1510px) {
+        margin: 0px;
+        @include widthHeight(498px, 284px);
+        form {
+            @include widthHeight(488px, 33px);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: none;
+            margin: 0px 0px 3px 5px;
+        }
+    }
 }
 .footer-sub-head {
     @include widthHeight(205px, 25px);
     @include font(700, 18px, 25px);
     text-transform: capitalize;
     margin-bottom: 15px;
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 33px);
+        @include font(700, 24px, 33px);
+        margin-bottom: 80px;
+    }
 }
 .footer-sub-text {
     @include widthHeight(345px, 66px);
     @include font(400, 14px, 22px);
     margin-bottom: 30px;
+    @media (min-width: 1510px) {
+        @include widthHeight(449px, 90px);
+        @include font(400, 18px, 30px);
+        margin-bottom: 44px;
+    }
 }
 .foot-wr-let-email {
     @include widthHeight(233px, 30px);
@@ -69,6 +131,14 @@
     color: $white;
     &::placeholder {
         color: $white;
+    }
+    @media (min-width: 1510px) {
+        @include widthHeight(350px, 25px);
+        @include font(400, 14px, 25px);
+        padding: 0px;
+        &::placeholder {
+            color: $white;
+        }
     }
 }
 .foot-wr-let-button {
@@ -82,10 +152,27 @@
     &:hover {
         cursor: pointer;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 33px);
+        @include font(700, 24px, 33px);
+        margin: 0px;
+    }
+}
+.footwl-line {
+    display: none;
+    @media (min-width: 1510px) {
+        display: block;
+        @include widthHeight(498px, 1px);
+        background: $white;
+    }
 }
 .links-for-network {
     @include widthHeight(340px, 30px);
     @include flexHead(flex-start);
+    @media (min-width: 1510px) {
+        @include widthHeight(250px, 40px);
+        @include flexHead(space-between);
+    }
     
 }
 .link-for-facebook, .link-for-twitter, .link-for-google, .link-for-in {
@@ -99,6 +186,10 @@
         background: $white;
         cursor: pointer;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(40px, 40px);
+        margin: 0px;
+    }
 }
 .link-for-facebook {
     background-image: url(../images/footer-facebook-white.png);
@@ -106,12 +197,25 @@
         background-image: url(../images/footer-facebook-green.png);
         @include image();
     }
+    @media (min-width: 1510px) {
+        background-size: 30px 30px;
+        &:hover {
+            background-size: 30px 30px;
+        }
+    }
 }
 .link-for-twitter {
     background-image: url(../images/footer-twitter-white.png);
+    
     &:hover {
         background-image: url(../images/footer-twitter-green.png);
         @include image();
+    }
+    @media (min-width: 1510px) {
+        background-size: 30px 30px;
+        &:hover {
+            background-size: 30px 30px;
+        }
     }
 }
 .link-for-google {
@@ -120,12 +224,24 @@
         background-image: url(../images/footer-google-green.png);
         @include image();
     }
+    @media (min-width: 1510px) {
+        background-size: 30px 30px;
+        &:hover {
+            background-size: 30px 30px;
+        }
+    }
 }
 .link-for-in {
     background-image: url(../images/footer-in-white.png);
     &:hover {
         background-image: url(../images/footer-in-green.png);
         @include image();
+    }
+    @media (min-width: 1510px) {
+        background-size: 30px 30px;
+        &:hover {
+            background-size: 30px 30px;
+        }
     }
 }
 .contacts {
