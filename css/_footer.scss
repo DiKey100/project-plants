@@ -244,14 +244,46 @@
         }
     }
 }
+
 .contacts {
     margin-top: 40px;
     @include flexStart();
     @include widthHeight(345px, 126px);
+    @media (min-width: 1510px) {
+        margin: 0px;
+        @include widthHeight(208px, 354px);
+        padding-bottom: 54px;
+        .foot-contact-address, .fcphone, .foot-contact-email {
+            @include font(400, 18px, 30px);
+        }
+        .foot-contact-address {
+            @include widthHeight(208px, 60px);
+            margin-bottom: 20px;
+        }
+        .foot-contact-phone {
+            display: none;
+        }
+        .fcphones {
+            display: block;
+            margin-bottom: 20px;
+            @include widthHeight(auto, 57px);
+            .fcphone {
+                @include widthHeight(auto, 30px);
+            }
+        }
+        .foot-contact-email {
+            @include widthHeight(auto, 30px);
+        }
+    }
 }
 .foot-contact-head {
     @include font(700, 18px, 25px);
     margin-bottom: 15px;
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 33px);
+        @include font(700, 24px, 33px);
+        margin-bottom: 80px;
+    }
 }
 .foot-contact-address, .foot-contact-phone, .foot-contact-email {
     @include font(400, 14px, 22px);
@@ -260,6 +292,10 @@
         margin-bottom: 0px;
     }
 }
+.fcphones {
+    display: none;
+}
+
 .useful-links {
     @include widthHeight(345px, 158px);
     @include flexStart();

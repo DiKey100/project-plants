@@ -3953,6 +3953,42 @@ body {
   width: 345px;
   height: 126px;
 }
+@media (min-width: 1510px) {
+  .contacts {
+    margin: 0px;
+    width: 208px;
+    height: 354px;
+    padding-bottom: 54px;
+  }
+  .contacts .foot-contact-address, .contacts .fcphone, .contacts .foot-contact-email {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .contacts .foot-contact-address {
+    width: 208px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .contacts .foot-contact-phone {
+    display: none;
+  }
+  .contacts .fcphones {
+    display: block;
+    margin-bottom: 20px;
+    width: auto;
+    height: 57px;
+  }
+  .contacts .fcphones .fcphone {
+    width: auto;
+    height: 30px;
+  }
+  .contacts .foot-contact-email {
+    width: auto;
+    height: 30px;
+  }
+}
 
 .foot-contact-head {
   font-style: normal;
@@ -3960,6 +3996,17 @@ body {
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 15px;
+}
+@media (min-width: 1510px) {
+  .foot-contact-head {
+    width: auto;
+    height: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 80px;
+  }
 }
 
 .foot-contact-address, .foot-contact-phone, .foot-contact-email {
@@ -3971,6 +4018,10 @@ body {
 }
 .foot-contact-address:last-child, .foot-contact-phone:last-child, .foot-contact-email:last-child {
   margin-bottom: 0px;
+}
+
+.fcphones {
+  display: none;
 }
 
 .useful-links {
