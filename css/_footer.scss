@@ -300,24 +300,44 @@
     @include widthHeight(345px, 158px);
     @include flexStart();
     margin-top: 40px;
+    @media (min-width: 1510px) {
+        @include widthHeight(240px, 354px);
+        margin: 0px;
+        padding-bottom: 61px;
+    }
 }
 .foot-ul-head {
     @include font(700, 18px, 25px);
     margin-bottom: 15px;
     text-transform: capitalize;
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 33px);
+        @include font(700, 24px, 33px);
+        margin-bottom: 80px;
+    }
 }
 .foot-ul-table {
     @include widthHeight(260px, 118px);
     @include flexHead(space-between);
+    @media (min-width: 1510px) {
+        @include widthHeight(240px, 180px);
+    }
 }
 .foot-ul-line-1 {
     @include widthHeight(76px, 118px);
     @include flexStart();
     margin-right: 99px;
+    @media (min-width: 1510px) {
+        @include widthHeight(89px, 180px);
+        margin: 0px;
+    }
 }
 .foot-ul-line-2 {
     @include widthHeight(85px, 118px);
     @include flexStart();
+    @media (min-width: 1510px) {
+        @include widthHeight(101px, 180px);
+    }
 }
 .foot-ul-item {
     @include font(400, 14px, 22px);
@@ -329,17 +349,40 @@
         @include image();
         margin-right: 10px;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 30px);
+        @include flexHead(flex-start);
+        @include font(400, 18px, 30px);
+        &:before {
+            @include beforeAfter();
+            @include widthHeight(7px, 12px);
+            @include image();
+            background-image: url(../images/destop/dfooter-ul-arrow.png);
+            margin-right: 5px;
+        }
+    }
 }
+
 .popular-services {
     @include widthHeight(345px, 158px);
     @include flexStart();
     margin-top: 40px;
+    @media (min-width: 1510px) {
+        @include widthHeight(187px, 354px);
+        margin: 0px;
+        padding-bottom: 63px;
+    }
 }
 .foot-ps-head {
     @include widthHeight(141px, 25px);
     @include font(700, 18px, 25px);
     text-transform: capitalize;
     margin-bottom: 15px;
+    @media (min-width: 1510px) {
+        @include widthHeight(187px, 33px);
+        @include font(700, 24px, 33px);
+        margin-bottom: 80px;
+    }
 }
 .foot-ps-item {
     text-transform: capitalize;
@@ -348,33 +391,85 @@
     &:last-child {
         margin-bottom: 0px;
     }
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 30px);
+        margin-bottom: 20px;
+        @include font(400, 18px, 30px);
+        &:first-child {
+            @include widthHeight(auto, 28px);
+            @include fontP(400, 16px, 28px);
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
 }
+
 .footer-separator {
     margin-top: 40px;
     @include widthHeight(345px, 1px);
     background: $white;
+    @media (min-width: 1510px) {
+        @include widthHeight(100%, 1px);
+        margin: 41px 0px 30px;
+    }
+}
+
+.footer-bottom-block {
+    @media (min-width: 1510px) {
+        @include widthHeight(1204px, 70px);
+        @include flexHead(space-between);
+        padding-bottom: 40px;
+    }
 }
 .footer-text {
     @include widthHeight(286px, 32px);
     @include font(400, 12px, 16px);
     text-align: center;
     margin-top: 15px;
+    @media (min-width: 1510px) {
+        display: none;
+    }
+}
+.dfooter-text {
+    display: none;
+    @media (min-width: 1510px) {
+        @include widthHeight(auto, 30px);
+        @include font(400, 18px, 30px);
+        display: block;
+    }
 }
 .footer-bottom {
     margin-top: 20px;
     @include widthHeight(285px, 19px);
     @include flexHead(space-between);
     margin-bottom: 24px;
+    @media (min-width: 1510px) {
+        @include widthHeight(337px, 28px);
+        margin: 0px;
+    }
 }
 .foot-bot-priv-pol, .foot-bot-sitemap, .foot-bot-terms-of-use {
     @include font(600, 14px, 19px);
+    @media (min-width: 1510px) {
+        @include fontP(400, 16px, 28px);
+    }
 }
 .foot-bot-priv-pol {
     @include widthHeight(88px, 19px);
+    @media (min-width: 1510px) {
+        @include widthHeight(110px, 28px);
+    }
 }
 .foot-bot-sitemap {
     @include widthHeight(53px, 19px);
+    @media (min-width: 1510px) {
+        @include widthHeight(67px, 28px);
+    }
 }
 .foot-bot-terms-of-use {
     @include widthHeight(84px, 19px);
+    @media (min-width: 1510px) {
+        @include widthHeight(104px, 28px);
+    }
 }
