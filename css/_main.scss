@@ -298,7 +298,7 @@
 }
 .discover-more {
     @include widthHeight(167px, 40px);
-    @include font(700, 16px, 40px);
+    @include font(700, 16px, 36px);
     text-align: center;
     border: 1px $prime solid;
     border-radius: 5px;
