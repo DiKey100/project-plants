@@ -37,7 +37,7 @@
     }
 }
 .yt-head {
-    @include widthHeight(225px, 38px);
+    @include widthHeight(auto, 38px);
     @include font(700, 28px, 38px);
     text-align: center;
     color: black;
@@ -47,7 +47,7 @@
         color: $prime;
     }
     @media (min-width: 1510px) {
-        @include widthHeight(371px, 60px);
+        @include widthHeight(auto, 60px);
         @include font(800, 45px, 60px);
         color: black;
         span {
@@ -280,7 +280,7 @@
         color: $prime;
     }
     @media (min-width: 1510px) {
-        @include widthHeight(442px, 61px);
+        @include widthHeight(auto, 61px);
         @include font(800, 45px, 61px);
         span {
             color: $prime;

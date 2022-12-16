@@ -1422,7 +1422,7 @@ body {
 }
 
 .wcu-content-head {
-  width: 210px;
+  width: auto;
   height: 38px;
   font-style: normal;
   font-weight: 700;
@@ -1630,7 +1630,7 @@ body {
 }
 
 .wp-text-head {
-  width: 220px;
+  width: auto;
   height: 38px;
   font-style: normal;
   font-weight: 700;
@@ -1644,7 +1644,7 @@ body {
 }
 @media (min-width: 1510px) {
   .wp-text-head {
-    width: 361px;
+    width: auto;
     height: 61px;
     font-style: normal;
     font-weight: 800;
@@ -2073,7 +2073,7 @@ body {
 }
 
 .yt-head {
-  width: 225px;
+  width: auto;
   height: 38px;
   font-style: normal;
   font-weight: 700;
@@ -2089,7 +2089,7 @@ body {
 }
 @media (min-width: 1510px) {
   .yt-head {
-    width: 371px;
+    width: auto;
     height: 60px;
     font-style: normal;
     font-weight: 800;
@@ -2467,7 +2467,7 @@ body {
 }
 @media (min-width: 1510px) {
   .cs-text-head {
-    width: 442px;
+    width: auto;
     height: 61px;
     font-style: normal;
     font-weight: 800;
